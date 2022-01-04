@@ -1,0 +1,31 @@
+body{
+    margin: 0;
+}
+.yellow-block{
+    margin: 10px;
+    width:150px;
+    height: 150px;
+    background-color: yellow;
+    border: 1px solid;
+    border-color: black;
+}
+.container{
+    height: 100vh;
+    display: grid;
+    grid-template-columns:  1fr 6fr 1fr;
+        
+}
+.column{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}

@@ -1,0 +1,36 @@
+body{
+    margin: 0;
+}
+/*Colors and sizes*/
+.block{
+    width: 50px;
+    height: 50px;
+}
+
+.orange{
+    background-color: orange;
+}
+
+.orangered{
+    background-color: orangered;
+}
+
+.brown{
+    background-color: brown;
+}
+
+/*Patterns*/
+.pattern{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+/*    grid-template-rows: 1fr 1fr;*/
+    grid-gap: 2px;
+    width: 100px;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+/*    grid-template-rows: repeat(8, 1fr);*/
+    width: 810px;
+    grid-gap: 4px;
+}
