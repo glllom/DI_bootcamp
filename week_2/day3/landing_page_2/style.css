@@ -1,0 +1,18 @@
+
+/*variables*/
+:root {
+    --color-primary:#32CD32;
+  }
+.primary-color{
+    color:var(--color-primary)
+}
+/* Header */
+
+header{
+    background-image: url("https://cdn.pixabay.com/photo/2017/01/14/10/56/people-1979261_960_720.jpg");
+    background-size:cover;
+    height: 100vh;
+    
+}
+ 
+
