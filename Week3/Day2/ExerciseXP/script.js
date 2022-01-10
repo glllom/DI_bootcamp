@@ -12,7 +12,7 @@ console.log(`I eat ${favoriteFood} every ${favoriteMeal}`);
  */
 
 let watchedSeries = ["Black mirror", "Money heist", "The Big Bang Theory"];
-let watchedSeriesLength = 5;
+let watchedSeriesLength = 2;
 let myWatchedSeries = "money heist, and the big bang theory";
 
 console.log(`I watched ${watchedSeriesLength} series : ${myWatchedSeries}`);
