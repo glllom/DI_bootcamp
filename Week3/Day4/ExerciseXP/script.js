@@ -24,7 +24,7 @@ console.log(`Word "${newDog}" has ${newDog.length} letters.`);
 console.log(newDog.toUpperCase(),newDog.toLowerCase());
 
 if (newDog == 'Chihuahua'){
-    console.log("I love Chihuahuas, it’s my favorite dog breed");
+    console.log("I love Chihuahuas, it's my favorite dog breed");
 }
 else {
     console.log("I dont care, I prefer cats");
@@ -34,10 +34,10 @@ else {
  * Exercice 3
  */
 x = prompt("Give me the number");
-if (x % 2 == 0)
-    console.log("x is an even number");
+if (x % 2)
+    console.log(`${x} is an even number`);
 else
-    console.log("x is an odd number");
+    console.log(`${x} is an odd number`);
 
 /*
  * Exercice 4
