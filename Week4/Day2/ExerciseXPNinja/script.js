@@ -45,3 +45,10 @@ console.log(isPalindrome("Was it a car or a cat I saw?"));
 /*
  * Exercise 4 : Biggest Number
  */
+function biggestNumberInArray(arrayNumber) {
+    let biggestNumber = 0;
+    arrayNumber.forEach(num => {biggestNumber = Math.max(biggestNumber, num)});
+    return biggestNumber;
+}
+
+console.log(biggestNumberInArray(['a', 3, 4, 2]));
