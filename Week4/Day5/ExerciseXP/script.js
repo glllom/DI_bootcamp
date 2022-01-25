@@ -20,7 +20,6 @@ function ex_2() {
         ul.classList.add("student_list");
     });
     allElementsUL[0].classList.add("university","attendance");
-    // console.log(allElementsUL[1].querySelectorAll("li"));
     allElementsUL[1].querySelectorAll("li").forEach((li, index, arr) => 
         {if (li.textContent == "Sarah")
                  arr[index].remove(li);});
