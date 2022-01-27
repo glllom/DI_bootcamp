@@ -1,0 +1,11 @@
+body{
+    margin: 0;
+    background-color: lightblue;
+}
+.d-flex>*:focus, #list>* {
+    outline: none;
+    box-shadow: none;
+  }
+.container{
+    width: 700px;
+}
