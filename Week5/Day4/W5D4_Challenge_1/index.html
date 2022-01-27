@@ -10,17 +10,18 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+    <!-- head line -->
     <div class="container text-center">
     <h1 class="m-3"> TO-DO LIST</h1>
+    <!-- add form -->
     <div class="d-flex mb-3 bg-white rounded-3 border border-2">
         <input type="text" class="form-control border-0" id="newTask" placeholder="New task">
         <button type="submit" onclick="addTask();" class="btn btn-link navbar-brand">ADD</button>   
     </div>
+    <!-- tasks page -->
     <div id="page" class="rounded-3 border border-2 bg-white p-5 pb-2">
         <div id=listTasks>
-
         </div>
-
         <div class="d-flex justify-content-end">
             <a href="#" class="link-danger text-decoration-none m-1" onclick="clearAll();">Clear</a>
         </div>

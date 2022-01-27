@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>letters</title>
+</head>
+
+<body>
+    <textarea name="text" id="text" cols="50" rows="20" style="font-size: xx-large; padding:30px;"></textarea>
+
+    <script>
+        let counterToRemove = 0;
+        let text = document.getElementById("text");
+        text.addEventListener("keyup", removeSymbols);
+        text.addEventListener("keydown", testSymbol);
+
+        function testSymbol(e) {
+            if (!/[a-zA-Z]/gi.test(e.key))
+                counterToRemove++;
+        }
+        function removeSymbols() {
+            text.value = text.value.substring(0, text.value.length - counterToRemove);
+            counterToRemove = 0;
+        }
+
+    </script>
+</body>
+
+</html>
