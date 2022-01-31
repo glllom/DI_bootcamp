@@ -21,24 +21,26 @@
             height: 50px;
             position: absolute;
             border-radius: 10%;
-            
-            
         }
+
         .red {
             left: 170px;
             top: 600px;
             background-color: red;
         }
+
         .green {
             left: 470px;
             top: 100px;
             background-color: green;
         }
+
         .blue {
             left: 270px;
             top: 700px;
             background-color: blue;
         }
+
         .brown {
             left: 770px;
             top: 610px;
@@ -56,14 +58,14 @@
     <script>
         let elements = document.getElementsByClassName("box");
         let container = document.getElementById("container");
-        for (element of elements){
-        element.addEventListener("dragend", function (event) {
-            event.target.style.left = event.clientX + "px";
-            event.target.style.top = event.clientY + "px";
-            if (isIntoBox(event.target, container))
-                ToArrange(event.target, container);
-        });
-    }
+        for (element of elements) {
+            element.addEventListener("dragend", function (event) {
+                event.target.style.left = event.clientX + "px";
+                event.target.style.top = event.clientY + "px";
+                if (isIntoBox(event.target, container))
+                    ToArrange(event.target, container);
+            });
+        }
 
         function isIntoBox(element, container) {
             leftTopCornerOfBox = [parseInt(getComputedStyle(container).left), parseInt(getComputedStyle(container).top)];
@@ -74,7 +76,7 @@
                 leftTopCornerOfElement[0] < leftTopCornerOfBox[0] + dimentionsOfBox[0] &&
                 leftTopCornerOfElement[1] < leftTopCornerOfBox[1] + dimentionsOfBox[1]);
         }
-        
+
         function ToArrange(element, container) {
             element.setAttribute("draggable", false);
             element.style.position = "relative";

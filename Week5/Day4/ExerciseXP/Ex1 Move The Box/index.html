@@ -35,7 +35,10 @@
                 if (parseInt(animatePosition) <= parseInt(containerWidth) - parseInt(animateWidth))
                     animate.style.left = parseInt(animatePosition) + 1 + "px";
                 else
+                {
                     clearInterval(interval);
+                    animate.style.left ="0px";
+                }
             }, 5);
         }
     </script>
