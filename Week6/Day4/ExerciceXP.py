@@ -129,10 +129,10 @@ print(f"Total price is: {10 + 2.5 * len(toppings)}")
 Exercise 11: Cinemax
 """
 total_cost = 0
-ages = input("Input your ages, separated by single space. ").strip().split(" ")
+
 for age in ages:
     if 3 <= int(age) <= 12:
         total_cost += 10
-    if int(age) < 12:
+    if int(age) > 12:
         total_cost += 15
 print(f"Total price is {total_cost}")
