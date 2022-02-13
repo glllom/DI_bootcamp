@@ -1,7 +1,8 @@
 import random
+from functools import reduce
 
 """
-prints hangman depending by score
+prints hangman depending by score of mistakes
 """
 def show_hangman(score):
     print("   +----------+")
@@ -31,16 +32,16 @@ def show_word(word, used_letters):
 checks if all word has been guessed
 """
 def is_guessed(word, used_letters):
-    return False not in map(lambda letter: letter in used_letters, word)
+    return reduce((lambda bool1, bool2: bool1 and bool2), map(lambda letter: letter in used_letters, word))
 
 
 """
 Check if user's choice is correct 
 """
-def correct_choice(choice, *args):
-    if choice not in args:
+def correct_choice(user_input, *args):
+    if user_input not in args:
         print("Incorrect input.")
-    return choice in args
+    return user_input in args
 
 
 """
@@ -74,12 +75,13 @@ def main():
             print('Correct!')
             if is_guessed(word, used_letters):
                 print("Congratulations, you win!")
+                show_word(word, used_letters)
                 break
         else:
             print('Wrong!')
             score += 1
             show_hangman(score)
-            print("You loose!" if score == 6 else f"Your score: {score}")
+            print("You loose!" if score == 6 else f"Your score of mistakes: {score}")
 
 
 # -------------------------------------------------------------------------------------------------------
