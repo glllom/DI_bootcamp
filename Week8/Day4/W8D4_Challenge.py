@@ -1,4 +1,4 @@
-from random import randint
+from random import randint, choices
 
 
 class Gene:
@@ -32,8 +32,8 @@ class Chromosome:
     """
 
     def mutate(self):
-        for index in {randint(0, 9) for _ in range(randint(0, 10))}:  # random amount of random numbers
-            self.__genome[index].mutate()
+        for gene in choices(self.__genome):  # random amount of random numbers
+            gene.mutate()
 
     def get_genome(self):
         return self.__genome
@@ -50,8 +50,8 @@ class Dna:
     """
 
     def mutate(self):
-        for index in {randint(0, 9) for _ in range(randint(0, 10))}:  # random amount of random numbers
-            self.__chromosomes[index].mutate()
+        for chromosome in choices(self.__chromosomes):  # random amount of random numbers
+            chromosome.mutate()
 
     """
     Standard getter
@@ -102,6 +102,13 @@ class Organism:
         print(' ' * 20, '\t', chr(9711), '-' * 10, chr(9679), sep='')  # style
         print('-' * 40, sep='a')  # style
 
+    """
+    Find sum of conditions of all genes, of all chromosomes in DNA 
+    """
+    def get_sum_of_genes(self):
+        return sum(sum(map(Gene.get_condition, chromosome.get_genome()))
+                   for chromosome in self.get_dna().get_chromosomes())
+
 
 class Gremlin(Organism):
     def __init__(self, name, dna):
@@ -111,12 +118,6 @@ class Gremlin(Organism):
     def get_environment(self):
         return self.__environment_to_mutate
 
-    """
-    Find sum of conditions of all genes, of all chromosomes in DNA 
-    """
-    def get_sum_of_genes(self):
-        return sum(sum(map(Gene.get_condition, chromosome.get_genome()))
-                   for chromosome in self.get_dna().get_chromosomes())
 
 def organism_to_mutate(organism, transitions_grade, environment):
     if organism.get_environment() == environment:
@@ -131,6 +132,7 @@ def organism_to_mutate(organism, transitions_grade, environment):
         organism.print_table_of_genes()
 
 
+#  -----------------------------------------------------------------------------------------------
 stripe = Gremlin('Stripe', Dna([Chromosome([Gene() for _ in range(10)]) for _ in range(10)]))
 mohawk = Gremlin('Mohawk', Dna([Chromosome([Gene() for _ in range(10)]) for _ in range(10)]))
 mugger = Gremlin('Mugger', Dna([Chromosome([Gene() for _ in range(10)]) for _ in range(10)]))
