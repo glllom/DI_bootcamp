@@ -4,7 +4,7 @@ import math
 class Circle:
     """Circle can be defined by either specifying the radius(r) or the diameter(d)"""
     def __init__(self, **kwargs):
-        if len(kwargs) > 1 :
+        if len(kwargs) > 1:
             raise ValueError("Argument can be only one ('r', or 'd')")
         if list(kwargs.keys())[0] == 'r':
             self.diam = kwargs['r'] * 2
@@ -12,7 +12,6 @@ class Circle:
             self.diam = kwargs['d']
         else:
             raise ValueError("Argument gan be either 'r', or 'd'")
-        # print(self.diam)
 
     def get_diameter(self):
         return self.diam
@@ -41,6 +40,9 @@ class Circle:
         if isinstance(other, Circle):
             return self.diam == other.diam
         raise ValueError('Value Invalid')
+
+    def __next__(self):
+        return self
 
 
 c1 = Circle(r=10)
