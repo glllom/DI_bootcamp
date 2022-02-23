@@ -70,4 +70,5 @@ root.add_node(Node(20))
 
 root.print_tree()
 
+print('******************')
 (root.search(10).print_tree())
