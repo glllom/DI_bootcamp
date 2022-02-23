@@ -12,6 +12,7 @@ class Creature:
         self.locked = weight
 
     def find_nearest_food(self, grid):
+        pass
 
 
 
