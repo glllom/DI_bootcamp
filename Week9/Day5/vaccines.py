@@ -69,7 +69,7 @@ class Queue:
 
     def rearrange_queue(self):
         """method to the Queue class, so that there is no two members of the same family one after the other."""
-        if len(self.list_humans) < 2:
+        if len(self.list_humans) < 3:
             return
         for i in range(1, len(self.list_humans)):
             if self.list_humans[i] in self.list_humans[i-1].family:
