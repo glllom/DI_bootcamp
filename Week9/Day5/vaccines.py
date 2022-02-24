@@ -1,8 +1,12 @@
 class Human:
+    @staticmethod
+    def validate(blood_type: str):
+        return blood_type in ["A", "B", "AB", "O"]
+
     def __init__(self, id_number: str, name: str, age: int, prioritary: bool, blood_type: str):
-        if blood_type not in ["A", "B", "AB", "O"]:
-            print("Invalid blood type.")
-            return
+        if not Human.validate(blood_type):
+            raise ValueError("Invalid type of blood")
+
         self.id_number = id_number
         self.name = name
         self.age = age
