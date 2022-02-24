@@ -5,6 +5,7 @@ class Human:
         self.living_place = living_place
 
     def move(self, building):
+        # self.living_place.inhabitants.remove(self)
         self.living_place = building
         building.inhabitants.append(self)
 
