@@ -1,12 +1,11 @@
 class Human:
     @staticmethod
-    def validate(blood_type: str):
+    def validate_blood_type(blood_type: str):
         return blood_type in ["A", "B", "AB", "O"]
 
     def __init__(self, id_number: str, name: str, age: int, prioritary: bool, blood_type: str):
-        if not Human.validate(blood_type):
+        if not Human.validate_blood_type(blood_type):
             raise ValueError("Invalid type of blood")
-
         self.id_number = id_number
         self.name = name
         self.age = age
@@ -37,16 +36,12 @@ class Queue:
 
     def find_in_queue(self, person):
         """Returns the index of a human in the queue."""
-        for index, p in enumerate(self.list_humans):
-            if p == person:
-                return index
+        return self.list_humans.index(person)
 
     def swap(self, person1, person2):
         """Swaps person1 with person2."""
         index_1, index_2 = self.list_humans.index(person1), self.list_humans.index(person2)
-        self.list_humans.append(self.list_humans.pop(index_1))
-        self.list_humans.insert(index_1, self.list_humans.pop(index_2))
-        self.list_humans.insert(index_2, self.list_humans.pop())
+        self.list_humans[index_1], self.list_humans[index_2] = self.list_humans[index_2], self.list_humans[index_1]
 
     def get_next(self):
         """return the next human in the queue, meaning the object at index 0 in the list."""
@@ -56,7 +51,7 @@ class Queue:
 
     def get_next_blood_type(self, blood_type):
         """ Return the first human with this specific blood type."""
-        if len(self.list_humans) == 0:
+        if not len(self.list_humans):
             return None
         for person in self.list_humans:
             if person.blood_type == blood_type:
