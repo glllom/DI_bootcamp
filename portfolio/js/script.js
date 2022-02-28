@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
 
   const followCursor = () => {
-    const el = document.querySelector('.backgrount-lighted');
+    const el = document.querySelector('.background-lighted');
     window.addEventListener('mousemove', e => {
       const target = e.target;
       if (!target) return;
