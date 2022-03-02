@@ -47,4 +47,4 @@ person = json.loads(sampleJson)
 print(f" Your salary is: ${person['company']['employee']['payable']['salary']}")
 person['company']['employee']["birth_date"] = "01/01/1990"
 with open("person.json", "w") as f:
-    json.dump(person, f)
+    json.dump(person, f, indent=4)
