@@ -1,5 +1,5 @@
 import re
-from random import randint, choices, choice, sample
+from random import randint, choice, sample
 
 
 def return_numbers(expression):
