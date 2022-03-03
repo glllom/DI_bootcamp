@@ -32,9 +32,9 @@ class Text:
         words = self.words.copy()
         frequency = {}
         while len(words) > 0:
-            word = words[len(words)-1]
+            word = words[len(words) - 1]
             frequency[word] = 0
-            for index in range(len(words)-1, -1, -1):
+            for index in range(len(words) - 1, -1, -1):
                 if words[index] == word:
                     frequency[word] += 1
                     words.pop(index)
@@ -59,7 +59,7 @@ class TextModification(Text):
             return TextModification(f.read())
 
     def no_punctuation(self):
-        return re.sub("[,.!?()\\/\":;—]", "", self.text)
+        return re.sub("[\\,.!?()/\":;—]", "", self.text)
 
     def no_stopwords(self):
         """Returns the text without any english stop-words """
@@ -71,16 +71,16 @@ class TextModification(Text):
 
 
 start_time = datetime.now()
-print(Text.from_file("the_stranger.txt").most_common())
-print(datetime.now() - start_time)
-start_time = datetime.now()
-print(Text.from_file("the_stranger.txt").most_common_fast())
-print(datetime.now() - start_time)
-start_time = datetime.now()
-print(Text.from_file("the_stranger.txt").most_common_fastest())
-print(datetime.now() - start_time)
+print("The most common word is:", Text.from_file("the_stranger.txt").most_common())
+print(f"\t\tExecution time: {datetime.now() - start_time}")
 
+start_time = datetime.now()
+print("The most common word is:", Text.from_file("the_stranger.txt").most_common_fast())
+print(f"\t\tExecution time: {datetime.now() - start_time}")
+
+start_time = datetime.now()
+print("The most common word is:", Text.from_file("the_stranger.txt").most_common_fastest())
+print(f"\t\tExecution time: {datetime.now() - start_time}")
 
 # print(Text(TextModification.from_file("the_stranger.txt").no_stopwords()).most_common_fastest())
 # print(TextModification.from_file("the_stranger.txt").no_special())
-
