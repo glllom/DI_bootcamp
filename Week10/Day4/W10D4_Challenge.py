@@ -8,7 +8,7 @@ class Text:
     def from_file(cls, file_path):
         """Returns a Text instance from file"""
         with open(file_path, 'r') as f:
-            return Text(f.read())
+            return cls(f.read())
 
     def __init__(self, string):
         self.text = string
@@ -24,7 +24,8 @@ class Text:
 
     def most_common(self):
         """Returns the most common word in the text."""
-        frequency = dict(map(lambda word: (word, self.get_frequency(word)), self.get_unique_words()))
+        frequency = map(self.get_frequency, self.get_unique_words())
+        # frequency = dict(map(lambda word: (word, self.get_frequency(word)), self.get_unique_words()))
         return max(frequency, key=frequency.get)
 
     def most_common_fast(self):
@@ -52,12 +53,6 @@ class Text:
 
 
 class TextModification(Text):
-    @classmethod
-    def from_file(cls, file_path):
-        """Returns a Text instance from file"""
-        with open(file_path, 'r') as f:
-            return TextModification(f.read())
-
     def no_punctuation(self):
         return re.sub("[\\,.!?()/\":;—]", "", self.text)
 
@@ -70,17 +65,17 @@ class TextModification(Text):
         return re.sub(r"\W", "", self.text)
 
 
-start_time = datetime.now()
+# start_time = datetime.now()
 print("The most common word is:", Text.from_file("the_stranger.txt").most_common())
-print(f"\t\tExecution time: {datetime.now() - start_time}")
+# print(f"\t\tExecution time: {datetime.now() - start_time}")
+#
+# start_time = datetime.now()
+# print("The most common word is:", Text.from_file("the_stranger.txt").most_common_fast())
+# print(f"\t\tExecution time: {datetime.now() - start_time}")
+#
+# start_time = datetime.now()
+# print("The most common word is:", Text.from_file("the_stranger.txt").most_common_fastest())
+# print(f"\t\tExecution time: {datetime.now() - start_time}")
 
-start_time = datetime.now()
-print("The most common word is:", Text.from_file("the_stranger.txt").most_common_fast())
-print(f"\t\tExecution time: {datetime.now() - start_time}")
-
-start_time = datetime.now()
-print("The most common word is:", Text.from_file("the_stranger.txt").most_common_fastest())
-print(f"\t\tExecution time: {datetime.now() - start_time}")
-
-# print(Text(TextModification.from_file("the_stranger.txt").no_stopwords()).most_common_fastest())
+#print(Text(TextModification.from_file("the_stranger.txt").no_stopwords()).most_common_fastest())
 # print(TextModification.from_file("the_stranger.txt").no_special())
