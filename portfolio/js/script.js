@@ -40,9 +40,34 @@ function addSkill(skill, level, element) {
   bar_cont.classList.add('bar-container');
   let bar = document.createElement("div");
   bar.classList.add('progress');
-  p = skill + "<span>"+ level + "%</span>";
+  p = skill + "<span>" + level + "%</span>";
   bar.innerHTML = p;
   bar.style = ("width: " + level + "%")
   bar_cont.appendChild(bar)
   progressContent.appendChild(bar_cont);
+}
+
+let tg = document.querySelector(".nav-toggle")
+tg.addEventListener("click", activate_menu)
+let navbar = document.querySelector(".navbar")
+navbar.addEventListener("click", shrink_menu)
+
+function activate_menu() {
+  if (tg.classList.length == 1) {
+    tg.classList.add("active");
+    console.log("menu activated");
+    navbar.style.display = "block";
+  } else {
+    tg.classList.remove("active");
+    console.log("menu deactivated");
+    navbar.style.display = "none";
+  }
+}
+
+function shrink_menu() {
+  if (tg.classList.length == 2) {
+    tg.classList.remove("active");
+    console.log("menu deactivated");
+    navbar.style.display = "none";
+  }
 }
