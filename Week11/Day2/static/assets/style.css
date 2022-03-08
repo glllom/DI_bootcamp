@@ -1,0 +1,16 @@
+img{
+    border-radius: 50%;
+}
+
+h2{
+    color: darkblue;
+    font-style: italic;
+}
+
+h2::after{
+    content: "";
+    display: block;
+    width: 25%;
+    height: 2px;
+    background-color: gray;
+}
