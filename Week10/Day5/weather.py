@@ -1,8 +1,8 @@
 from pyowm.owm import OWM
-from pyowm.utils import timestamps
 owm = OWM('fbeca56154cfb9f74c56f39cbe6dc461')
 mgr = owm.weather_manager()
-mgr_air_pollution = owm.airpollution_manager()
+mgr_air_pollution\
+    = owm.airpollution_manager()
 reg = owm.city_id_registry()
 city = input("Input a city: ").strip()
 city_id = reg.ids_for(city, matching='exact')[0][0]

@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+{% set children, adults, olders, deaths = 0, 0, 0, 0 %}
+{% block app_content %}
+
+    <div class="header">
+        <div><a class="btn btn-warning home" href="{{ url_for('.index') }}">To main page</a></div>
+        <div class="counter">{{ game.counter_of_generations }}</div>
+        <div><a class="btn btn-info refresh" href="{{ url_for('live') }}">Create new life</a></div>
+    </div>
+
+    <table class="world">
+        {% for i in range((game.world)|length) %}
+            <tr>
+                {% for j in range((game.world)[0]|length) %}
+                    {% if game.world[i][j] == 1 %}
+                        {% if game.ages[i][j] < game.growing_age %}
+                            <td class="cell living-cell young-cell" >{{ game.ages[i][j] }}</td>
+                        {% elif game.growing_age <= game.ages[i][j] < game.aging_age %}
+                            <td class="cell living-cell adult-cell" >{{ game.ages[i][j] }}</td>
+                        {% else %}
+                            <td class="cell living-cell older-cell" >{{ game.ages[i][j] }}</td>
+                        {% endif %}
+                    {% elif game.old_world[i][j] == 1 %}
+                        <td class="cell dead-cell"></td>
+                    {% else %}
+                        <td class="cell"></td>
+                    {% endif %}
+                {% endfor %}
+            </tr>
+        {% endfor %}
+    </table>
+
+    <table class="statistics" border="1px">
+        <caption class="table_caption">Statistic</caption>
+        <tr>
+            <th>Children</th>
+            <td> {{ game.children }} </td>
+        </tr>
+        <tr>
+            <th>Adults</th>
+            <td> {{ game.adults }} </td>
+        </tr><tr>
+        <th>Olders</th>
+        <td> {{ game.olders }} </td>
+    </tr><tr>
+        <th>Deaths</th>
+        <td> {{ game.deaths }} </td>
+    </tr>
+
+    </table>
+
+
+{% endblock %}
+  {% block scripts%}
+    {{  super() }}
+    <script>setInterval(() => window.location.reload(), 1000);</script>
+{% endblock %}
+
