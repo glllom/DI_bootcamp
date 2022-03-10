@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block inner_text %}
+<h1 class="text-primary">Tech Market Products</h1>
+<p>Browse our extensive range of tech products</p>
+{% endblock %}
+
+<!--Content-->
+{% block content %}
+{% for product in products_list %}
+<div class="border w-75 m-auto mt-3" style="border-color: #ced4de">
+    <h3 class="w-100 fw-bold p-1" style="background: #ced4de">{{ product["Name"] }}</h3>
+    <h3 class="w-100 p-1">{{ product["ProductId"] }}</h3>
+    <p class="p-1">{{ product["Description"] }}</p>
+    <p class="p-2">Price: {{ product["Price"] }} EUR</p>
+    <button type="button" class="btn btn-primary m-2" onclick="window.location.href='/products/{{product["ProductId"]}}'">More Details</button>
+</div>
+{% endfor %}}
+{% endblock %}
