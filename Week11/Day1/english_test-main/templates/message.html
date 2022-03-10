@@ -5,5 +5,5 @@
 
 {% block scripts%}
     {{  super() }}
-    <script>setInterval(() => window.location.replace('/'), 3000);</script>
+    <script>setTimeout(() => window.location.replace('/'), 3000);</script>
 {% endblock %}
