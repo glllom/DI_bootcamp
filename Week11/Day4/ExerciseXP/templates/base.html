@@ -28,8 +28,9 @@
                 </li>
             </ul>
             <form action="" method="post" class="d-flex">
+
             {{ search_form.csrf_token() }}
-                {{search_form.word}}
+                <input class="form-control me-2" type="text" id="search_word" name="search_word" placeholder="Search" aria-label="Search">
                 <div class="w-100">
                     {% for search in search_form.search_type %}
                     <div class="form-check">

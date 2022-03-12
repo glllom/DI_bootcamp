@@ -1,5 +1,5 @@
 import json
-from flask import Flask, render_template, redirect, url_for
+from flask import Flask, render_template, redirect, url_for, request
 from form import SearchForm
 from config import Config
 
@@ -17,10 +17,11 @@ def get_form():
 def homepage():
     search_form = get_form()
     if search_form.is_submitted():
+        search_word = request.form["search_word"]
         if search_form.search_type.data == "By Name":
-            return redirect(url_for('show_product_details', product_id=search_form.word.data))
+            return redirect(url_for('show_product_details', product_id=search_word))
         if search_form.search_type.data == "By Category":
-            return redirect(url_for('products_by_category', product_category=search_form.word.data))
+            return redirect(url_for('products_by_category', product_category=search_word))
     return render_template('index.html', search_form=search_form)
 
 
@@ -28,10 +29,11 @@ def homepage():
 def products():
     search_form = get_form()
     if search_form.is_submitted():
+        search_word = request.form["search_word"]
         if search_form.search_type.data == "By Name":
-            return redirect(url_for('show_product_details', product_id=search_form.word.data))
+            return redirect(url_for('show_product_details', product_id=search_word))
         if search_form.search_type.data == "By Category":
-            return redirect(url_for('products_by_category', product_category=search_form.word.data))
+            return redirect(url_for('products_by_category', product_category=search_word))
     with open('product_db.json', 'r') as f:
         products_list = json.load(f)
     return render_template('products.html', products_list=products_list, search_form=search_form)
@@ -41,10 +43,11 @@ def products():
 def products_by_category(product_category):
     search_form = get_form()
     if search_form.is_submitted():
+        search_word = request.form["search_word"]
         if search_form.search_type.data == "By Name":
-            return redirect(url_for('show_product_details', product_id=search_form.word.data))
+            return redirect(url_for('show_product_details', product_id=search_word))
         if search_form.search_type.data == "By Category":
-            return redirect(url_for('products_by_category', product_category=search_form.word.data))
+            return redirect(url_for('products_by_category', product_category=search_word))
     with open('product_db.json', 'r') as f:
         all_products = json.load(f)
         products_list = []
@@ -58,10 +61,11 @@ def products_by_category(product_category):
 def show_product_details(product_id):
     search_form = get_form()
     if search_form.is_submitted():
+        search_word = request.form["search_word"]
         if search_form.search_type.data == "By Name":
-            return redirect(url_for('show_product_details', product_id=search_form.word.data))
+            return redirect(url_for('show_product_details', product_id=search_word))
         if search_form.search_type.data == "By Category":
-            return redirect(url_for('products_by_category', product_category=search_form.word.data))
+            return redirect(url_for('products_by_category', product_category=search_word))
     product_details = {}
     with open('product_db.json', 'r') as f:
         for product in json.load(f):

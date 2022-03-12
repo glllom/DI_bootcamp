@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block inner_text %}
+<h1 class="text-primary">Tech Market Products</h1>
+<p>Browse our extensive range of tech products</p>
+{% endblock %}
+
+<!--Content-->
+{% block content %}
+{% if cart_empty %}
+<h3 class="text-center p-5">Your Shopping Cart is empty</h3>
+{% endif %}
+{% for product in products_list %}
+<div class="border w-75 m-auto mt-3" style="border-color: #ced4de">
+    <h3 class="w-100 fw-bold p-1" style="background: #ced4de">{{ product["Name"] }}</h3>
+    <h3 class="w-100 p-1">{{ product["ProductId"] }}</h3>
+    <p class="p-1">{{ product["Description"] }}</p>
+    <p class="p-2">Price: {{ product["Price"] }} EUR</p>
+    <a type="button" class="btn btn-primary m-2" href="/products/{{product['ProductId']}}">More Details</a>
+    <a type="button" class="btn btn-danger m-2" href="{{url_for('remove_product_from_cart', product_id=product['ProductId'])}}">Remove From Cart</a>
+</div>
+{% endfor %}
+{% endblock %}

@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="paging_block">
+<a href="{{url_for('get_all_pokemons',page=offset-20)}}"><div class="arrow"><h1>&#8678</h1></div></a>
+<a href="{{url_for('get_all_pokemons',page=offset+20)}}"><div class="arrow"><h1>&#8680</h1></div></a>
+</div>
+<h1>Choose your Pokemon</h1>
+{% for pokemon in pokemons_list %}
+<a href="{{url_for('check_if_exists', pokemon_name=pokemon['name'])}}">
+    <div class="item">{{pokemon['name']}}</div>
+</a>
+{% endfor %}
+{% endblock %}

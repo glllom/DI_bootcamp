@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% block title %} <title>Pokemons</title> {% endblock %}
+    {% block css %}
+    <link rel="stylesheet" href="../static/style.css">
+    {% endblock %}
+</head>
+<body>
+<div class="container-bg"></div>
+<nav>
+    <ul>
+        <li>
+            <form action="{{url_for('check_if_exists')}}" method="post">
+                <input type="text" id="search_pokemon_word" name="search_pokemon" placeholder="Search">
+                <input class="btn" type="submit" value="Find Pokemon">
+            </form>
+        </li>
+        <li>
+            <form action="{{url_for('get_pokemons_by_type')}}" method="post">
+                <input type="text" id="search_pokemons_type" name="search_by_type" placeholder="Search">
+                <input class="btn" type="submit" value="Find Type">
+            </form>
+        </li>
+        <li><a class="btn" href="{{url_for('get_all_pokemons')}}">All Pokemons</a></li>
+    </ul>
+    {% if get_flashed_messages() | length > 0 %}
+    <p class="flashes">{{get_flashed_messages()[0]}}</p>
+    {% endif %}
+</nav>
+<div class="container">
+    {% block content %}
+    {% endblock %}
+</div>
+</body>
+</html>

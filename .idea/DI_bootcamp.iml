@@ -16,6 +16,8 @@
     <option name="TEMPLATE_FOLDERS">
       <list>
         <option value="$MODULE_DIR$/templates" />
+        <option value="$MODULE_DIR$/Week11/Day4/W11D4_Challenge/templates" />
+        <option value="$MODULE_DIR$/Week11/Day5/templates" />
       </list>
     </option>
   </component>

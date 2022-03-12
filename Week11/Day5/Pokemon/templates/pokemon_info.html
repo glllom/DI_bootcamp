@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block css %}
+<link rel="stylesheet" href="../../static/style.css">
+{% endblock %}
+{% block content %}
+
+
+<div class="item">
+<h1>{{pokemon_dict['forms'][0]['name'] | capitalize}}</h1>
+<div class="info">
+<div class="stats">
+    <p>Weight: {{ pokemon_dict['weight'] / 10 }} kg.</p>
+    <p>Height: {{ pokemon_dict['height'] / 10 }} m.</p>
+    <p>Type:
+        {% for type in pokemon_dict['types'] %}
+        {% if loop.index > 1 %}<span>,</span>{% endif %}
+        <span>{{type['type']['name']}}</span>
+        {% endfor %}
+    </p>
+</div>
+<div class="picture"><img src="{{pokemon_dict['sprites']['other']['official-artwork']['front_default']}}" alt=""></div>
+    </div>
+</div>
+{% endblock %}
+
+

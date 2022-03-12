@@ -8,7 +8,7 @@ def homepage():
     return render_template('index.html')
 
 
-@app.route('/<string:color>')
+@app.route('/<color>')
 def show_color(color):
     return render_template('color.html', color=color)
 

@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block inner_text %}
+<h1 class="text-primary">Welcome to Tech Market</h1>
+<p>The fastest growing online retailer in the west...</p>
+{% endblock %}
+
+<!--Content-->
+{% block content %}
+<h1 class="py-2">About</h1>
+<p>We supply a wide range of tech products and accessories for our client all over the world.</p>
+<div class="products d-flex ms-1">
+    <ul class="ms-5">
+        <li>Laptops</li>
+        <li>Computers</li>
+        <li>Phones</li>
+    </ul>
+    <ul class="ms-5">
+        <li>Audio Equipment</li>
+        <li>HD Monitors</li>
+        <li>Wireless Routers</li>
+    </ul>
+</div>
+<a type="button" class="btn btn-primary w-100 fs-3" href="{{url_for('products')}}">Check Out Our Products</a>
+{% endblock %}

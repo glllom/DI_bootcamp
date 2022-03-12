@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block css %}
+<link rel="stylesheet" href="../../static/style.css">
+{% endblock %}
+{% block content %}
+
+<h1>Here are all pokemons of type "{{ pokemon_type }}":</h1>
+{% for pokemon in pokemons_by_type %}
+<a href="{{url_for('pokemon_information', id=pokemon['pokemon']['name'])}}">
+    <div class="item">{{pokemon['pokemon']['name']}}</div>
+</a>
+
+{% endfor %}
+{% endblock %}

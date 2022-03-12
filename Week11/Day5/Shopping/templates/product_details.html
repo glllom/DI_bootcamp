@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+{% block inner_text %}
+<h1 class="text-primary">{{product_details["Name"]}}</h1>
+{% if product_details["Quantity"] > 0 %}
+<div class="alert alert-success" role="alert">
+    This product is currently available. Order while stock lasts!
+</div>
+{% else %}
+<div class="alert alert-danger" role="alert">
+    Sorry - this product is out of stock
+</div>
+{% endif %}
+{% endblock %}
+
+<!--Content-->
+{% block content %}
+<div class="border w-75 m-auto mt-3" style="border-color: #ced4de">
+    <h4 class="w-100 fw-bold p-2" style="background: #ced4de">Product Details</h4>
+        <img src='../static/{{product_details["ProductPicUrl"]}}' width="500" style="{ max-width: 30%; height: auto;}" alt="">
+    <div class="container">
+        <div class="row">
+            <p class="col">Product ID</p>
+            <p class="col">{{product_details["ProductId"]}}</p>
+        </div>
+        <div class="row">
+            <p class="col">Category</p>
+            <p class="col">{{product_details["Category"]}}</p>
+        </div>
+        <div class="row">
+            <p class="col">Supplier</p>
+            <p class="col">{{product_details["SupplierName"]}}</p>
+        </div>
+        <div class="row">
+            <p class="col">Description</p>
+            <p class="col">{{product_details["Description"]}}</p>
+        </div>
+        <div class="row">
+            <p class="col">Name</p>
+            <p class="col">{{product_details["Name"]}}</p>
+        </div>
+        <div class="row">
+            <p class="col">Height</p>
+            <p class="col">{{product_details["Height"]}} {{product_details["DimUnit"]}}</p>
+        </div>
+        <div class="row">
+            <p class="col">Width</p>
+            <p class="col">{{product_details["Width"]}} {{product_details["DimUnit"]}}</p>
+        </div>
+        <div class="row">
+            <p class="col">Depth</p>
+            <p class="col">{{product_details["Depth"]}} {{product_details["DimUnit"]}}</p>
+        </div>
+        <div class="row">
+            <p class="col">Weight</p>
+            <p class="col">{{product_details["WeightMeasure"]}} {{product_details["WeightUnit"]}}</p>
+        </div>
+        <div class="row">
+            <p class="col">Price</p>
+            <p class="col">{{product_details["Price"]}} {{product_details["CurrencyCode"]}}</p>
+        </div>
+        <div class="row">
+            <p class="col">Status</p>
+            <p class="col">{{product_details["Status"]}}
+        </div>
+        <a type="button" class="btn btn-primary m-2" href="{{url_for('add_product_to_cart', product_id=product_details['ProductId'])}}">Add to Cart</a>
+    </div>
+</div>
+{% endblock %}
