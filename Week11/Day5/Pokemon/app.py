@@ -6,7 +6,6 @@ app.secret_key = b'_5#y2L"F4Q8z\n\xec]/'
 
 
 @app.route('/')
-@app.route('/pokemons')
 def get_types():
     pokemons_types = (requests.get("https://pokeapi.co/api/v2/type")).json()['results']
     return render_template('index.html', pokemons_types=pokemons_types)

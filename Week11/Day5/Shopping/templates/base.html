@@ -36,14 +36,14 @@
                 {% if logged_user %}
                 <a class="navbar-brand fw-bold mx-4 px-2" href="#">Welcome, {{ logged_user }}</a>
                 <li class="nav-item mx-2">
-                    <a class="nav-link btn btn-outline-danger" href="{{url_for('homepage',log_out=True)}}">Log out</a>
+                    <a class="nav-link btn btn-outline-danger py-1" href="{{url_for('homepage',log_out=True)}}">Log out</a>
                 </li>
                 {% else %}
                 <li class="nav-item mx-2">
-                    <a class="nav-link btn btn-outline-primary" href="#login-popup">Log in</a>
+                    <a class="nav-link btn btn-outline-primary py-1" href="#login-popup">Log in</a>
                 </li>
                 <li class="nav-item mx-2">
-                    <a class="nav-link btn btn-outline-warning" href="#signup-popup">Sign up</a>
+                    <a class="nav-link btn btn-outline-warning py-1" href="#signup-popup">Sign up</a>
                 </li>
                 {% endif %}
             </ul>
