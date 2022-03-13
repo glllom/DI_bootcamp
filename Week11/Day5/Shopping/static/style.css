@@ -1,0 +1,53 @@
+.form-signin {
+    width: 400px;
+    background: whitesmoke;
+    text-align: center;
+    z-index: 3;
+    position: relative;
+}
+
+.shadow {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.76);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.shadow:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.close-popup {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  display: block;
+  z-index: 2;
+  position: fixed;
+  cursor: pointer;
+}
+.form-signin .close-button {
+  position: absolute;
+  top: 0px;
+  right: 15px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #0d6efd;
+}
+.form-signin .close-button:hover {
+  color: #003893;
+}
+
