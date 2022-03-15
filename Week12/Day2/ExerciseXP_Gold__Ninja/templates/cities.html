@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cities</title>
+</head>
+<body>
+    <div class="main-form">
+    <form action="" method="post" novalidate>
+        {{ form.csrf_token() }}
+        {% for field in form if field.name not in ("csrf_token", "submit") %}
+            <div class="form-paragraph">
+                <p class="form-label">{{ field.label() }}</p>{{ field }}
+            </div>
+            {% for error in field.errors %}
+                <p class="error">{{ error }}</p>
+            {% endfor %}
+        {% endfor %}
+
+
+        <p>{{ form.submit(class_="button") }}</p>
+
+
+    </form>
+</body>
+</html>
