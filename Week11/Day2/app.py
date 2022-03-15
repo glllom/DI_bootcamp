@@ -8,7 +8,7 @@ app = flask.Flask(__name__)
 
 @app.route('/')
 def cv():
-    return flask.render_template('cv.html', name="Gleb Omarov")
+    return flask.render_template('cv_1.html', name="Gleb Omarov")
 
 
 if __name__ == '__main__':

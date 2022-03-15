@@ -1,7 +1,6 @@
 {% extends "base.html" %}
-
 {% block content %}
-<h1>Choose a category</h1>
+    <h1>Choose a category</h1>
 {% for type in pokemons_types %}
 <a href="{{url_for('get_pokemons_by_type', pokemon_type=type['name'])}}">
     <div class="item">{{type['name']}}</div>

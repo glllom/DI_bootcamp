@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CV</title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+<div class="A4">
+    <div class="column-1">
+        <div class="color-box-1"></div>
+        <div class="name">
+            <h1>{{ person.firstname }}</h1>
+            <h1>{{ person.lastname }}</h1>
+        </div>
+        <div class="avatar">
+            <img src="../static/img/avatar.jpg" alt="../static/img/avatar.jpg">
+        </div>
+        <h2>Contact</h2>
+        <h3>Address:</h3>
+        <p>{{ person.address }}<h1>{{ person.photo }}</h1></p>
+        <h3>Phone:</h3>
+        <p>{{ person.phone }}</p>
+        <h3>Email:</h3>
+        <p>{{ person.email }}</p>
+        <h2>Languages:</h2>
+        <p>{{ person.languages }}</p>
+    </div>
+    <div class="column-2">
+        <h2>Summary</h2>
+        <p>{{ person.summary }}</p>
+        <h2>Skill Highlights</h2>
+        <p>{{ person.skills }}</p>
+        <h2>Experience</h2>
+        <p>{{ person.experience }}</p>
+        <h2>Education</h2>
+        <p>{{ person.education }}</p>
+        <h2>Certifications</h2>
+        <p>{{ person.certifications }}</p>
+        <div class="color-box-2"></div>
+    </div>
+</div>
+</body>
+</html>

@@ -82,9 +82,6 @@ def show_product_details(product_id):
     return render_template('product_details.html', product_details=product_details, cart_empty=(len(cart_item) == 0), logged_user=logged_user)
 
 
-
-
-
 if __name__ == '__main__':
     app.run()
 
