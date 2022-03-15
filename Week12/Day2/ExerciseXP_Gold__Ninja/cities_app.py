@@ -14,6 +14,9 @@ def homepage():
         city['country'] = form.country.data
         city['inhabitants'] = form.inhabitants.data
         city['city_area'] = form.city_area.data
+        city['longitude'] = form.longitude.data
+        city['latitude'] = form.latitude.data
+        city['capital'] = form.capital.data
         return redirect(url_for('view'))
     return render_template('cities.html', form=form)
 

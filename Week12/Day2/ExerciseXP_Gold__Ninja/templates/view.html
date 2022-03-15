@@ -9,6 +9,12 @@
 <h2>{{ city.country }}</h2>
 <h3>{{ city.inhabitants }}</h3>
 <h3>{{ city.city_area }}</h3>
+<h4>{{ city.latitude }}</h4>
+<h4>{{ city.longitude }}</h4>
+{% if city.capital %}
+<h2>Capiltal</h2>
+{% endif %}
+
 
 </body>
 </html>
