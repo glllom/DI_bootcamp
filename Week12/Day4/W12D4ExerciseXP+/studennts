@@ -1,0 +1,8 @@
+INSERT INTO public.students(
+	last_name, first_name, birth_date)
+	VALUES ('Benichou', 'Marc',to_date('02/11/1998', 'DD/MM/YYYY')),
+			('Cohen', 'Yoan',to_date('03/12/2010', 'DD/MM/YYYY')),
+			('Benichou', 'Lea',	to_date('27/07/1987', 'DD/MM/YYYY')),
+			('Dux', 'Amelia', to_date('07/04/1996', 'DD/MM/YYYY')),
+			('Grez', 'David', to_date('14/06/2003', 'DD/MM/YYYY')),
+			('Simpson', 'Omer', to_date('03/10/1980', 'DD/MM/YYYY'));

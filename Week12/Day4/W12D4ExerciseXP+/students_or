@@ -1,0 +1,4 @@
+SELECT *
+	FROM public.students
+	WHERE first_name='Marc' OR last_name='Benichou'
+	

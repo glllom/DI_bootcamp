@@ -1,0 +1,4 @@
+SELECT *
+	FROM public.students
+	WHERE birth_date >= '1/01/2000'
+	
