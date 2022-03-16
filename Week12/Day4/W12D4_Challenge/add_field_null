@@ -1,0 +1,2 @@
+INSERT INTO actors (first_name, last_name, age)
+VALUES('Bill','Murray','21/09/1950');
