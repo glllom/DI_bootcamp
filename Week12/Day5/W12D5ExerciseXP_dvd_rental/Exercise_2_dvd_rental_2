@@ -1,0 +1,41 @@
+SELECT film_id, title, description, release_year, rental_rate
+	FROM public.film
+	ORDER BY rental_rate;
+
+SELECT address, phone
+	FROM public.address
+	WHERE address.district='Texas';
+
+SELECT *
+	FROM public.film
+	WHERE film.film_id=15 OR film.film_id=150;
+	
+SELECT film_id, title, description, length, rental_rate
+	FROM public.film
+	WHERE title ILIKE 'gl%';
+
+SELECT *
+	FROM public.film
+	ORDER BY rental_rate
+	LIMIT 10;
+	
+SELECT *
+	FROM public.film
+	ORDER BY rental_rate
+	OFFSET 10 LIMIT 10;
+	
+SELECT customer.first_name, customer.last_name, payment.amount, payment.payment_date
+	FROM public.customer JOIN public.payment
+	ON customer.customer_id=payment.customer_id
+	ORDER BY customer.customer_id;
+
+SELECT film_id
+	FROM public.film
+EXCEPT
+select film_id
+	FROM public.inventory;
+	
+SELECT	city.city, country.country
+	FROM public.city JOIN public.country
+	ON city.country_id=country.country_id
+	ORDER BY country;

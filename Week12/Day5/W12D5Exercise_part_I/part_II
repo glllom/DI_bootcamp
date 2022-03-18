@@ -1,0 +1,18 @@
+SELECT * FROM public.purchases;
+
+SELECT * FROM public.purchases INNER JOIN public.customers
+ON purchases.customer_id = customers.customer_id;
+
+SELECT * FROM public.purchases
+WHERE customer_id=5;
+
+SELECT * FROM public.purchases INNER JOIN public.items
+ON purchases.item_id = items.item_id
+WHERE item_name = 'Large desk' OR item_name = 'Small Desk' ;
+
+SELECT customers.customer_first_name, customers.customer_last_name, purchases.item_name FROM public.customers INNER JOIN
+(SELECT purchases.customer_id, items.item_name FROM public.items INNER JOIN public.purchases ON purchases.item_id = items.item_id) AS purchases
+ON customers.customer_id = purchases.customer_id;
+
+
+

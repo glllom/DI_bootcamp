@@ -1,0 +1,36 @@
+SELECT item_id, item_name, price
+	FROM public.items ORDER BY price;
+
+SELECT item_id, item_name, price
+	FROM public.items 	WHERE price >= 80
+	ORDER BY price DESC;
+
+SELECT customer_id, customer_first_name, customer_last_name
+	FROM public.customers 
+	ORDER BY customer_first_name LIMIT 3;
+
+SELECT customer_last_name
+	FROM public.customers 
+	ORDER BY customer_last_name DESC;
+
+CREATE TABLE public.purchases
+(
+    id integer NOT NULL GENERATED ALWAYS AS IDENTITY,
+    item_id integer NOT NULL,
+    quantity_purchased integer NOT NULL DEFAULT 0,
+    customer_id integer,
+    PRIMARY KEY (id),
+    CONSTRAINT customer_id FOREIGN KEY (customer_id)
+        REFERENCES public.customers (customer_id) MATCH SIMPLE
+        ON UPDATE NO ACTION
+        ON DELETE NO ACTION
+        NOT VALID,
+    CONSTRAINT item_id FOREIGN KEY (item_id)
+        REFERENCES public.items (item_id) MATCH SIMPLE
+        ON UPDATE NO ACTION
+        ON DELETE NO ACTION
+        NOT VALID
+);
+
+ALTER TABLE IF EXISTS public.purchases
+    OWNER to postgres;

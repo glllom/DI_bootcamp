@@ -1,0 +1,12 @@
+SELECT customer_id, store_id, first_name, last_name, email, address_id, activebool, create_date, last_update, active
+	FROM public.customer;
+	
+SELECT CONCAT(first_name, ' ', last_name)  AS full_name
+	FROM public.customer;
+	
+SELECT DISTINCT create_date
+	FROM public.customer;
+	
+SELECT customer_id, store_id, first_name, last_name, email, address_id, activebool, create_date, last_update, active
+	FROM public.customer
+	ORDER BY first_name DESC;
