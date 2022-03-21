@@ -42,7 +42,7 @@ def add_user():
         new_user = Users(name=form.user_name.data,
                          street=form.street.data,
                          city=form.city.data,
-                         zipcode=form.zipcode)
+                         zipcode=form.zipcode.data)
         db.session.add(new_user)
         db.session.commit()
         return redirect(url_for("show_table_1"))

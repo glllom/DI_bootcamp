@@ -6,8 +6,8 @@
 </head>
 <body>
     <form action="" method="post">
-        {% form.csrf_token() %}
-        {% for field in form if field.name not in (csrf_token, submit) %}
+        {{ form.csrf_token() }}
+        {% for field in form if field.name not in ("csrf_token", "submit") %}
             <p>{{ field.label }}</p>
             <p>{{ field }}</p>
         {% endfor %}
