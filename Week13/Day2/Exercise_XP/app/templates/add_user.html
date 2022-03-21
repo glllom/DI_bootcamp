@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add User</title>
+</head>
+<body>
+    <form action="" method="post">
+        {% form.csrf_token() %}
+        {% for field in form if field.name not in (csrf_token, submit) %}
+            <p>{{ field.label }}</p>
+            <p>{{ field }}</p>
+        {% endfor %}
+        {{ form.submit }}
+    </form>
+</body>
+</html>

@@ -2,9 +2,43 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Robots</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            font-size: large;
+            padding: 5px;
+            margin: 30px;
+        }
+        th{
+            background-color: lightgray;
+        }
+    </style>
 </head>
 <body>
-asdasdasdasd
+<div>
+    <table>
+        <caption>{{ caption }}</caption>
+        <tbody>
+        <tr>
+            <th>id</th>
+            <th>name</th>
+            <th>street</th>
+            <th>city</th>
+            <th>zipcode</th>
+        </tr>
+        {% for user in users %}
+            <tr>
+                <td>{{ user.id }}</td>
+                <td>{{ user.name }}</td>
+                <td>{{ user.street }}</td>
+                <td>{{ user.city }}</td>
+                <td>{{ user.zipcode }}</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+</div>
 </body>
 </html>
