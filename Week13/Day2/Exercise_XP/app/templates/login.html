@@ -2,10 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Add User</title>
+    <title>login</title>
 </head>
 <body>
-    <form action="" method="post">
+<h2>Login: </h2>
+<form action="" method="post">
         {{ form.csrf_token() }}
         {% for field in form if field.name not in ("csrf_token", "submit") %}
             <p>{{ field.label }}</p>

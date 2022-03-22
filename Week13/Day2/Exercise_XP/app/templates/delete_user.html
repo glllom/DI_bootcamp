@@ -40,6 +40,17 @@
         </tbody>
     </table>
 </div>
-{% include 'footer.html' %}
+<div>
+<h4>Remove record: </h4>
+    <form action="" method="post">
+        {{ form.csrf_token() }}
+        {% for field in form if field.name not in ("csrf_token", "submit") %}
+            <p>{{ field.label }}</p>
+            <p>{{ field }}</p>
+        {% endfor %}
+        {{ form.submit }}
+    </form>
+</div>
 </body>
+{% include 'footer.html' %}
 </html>

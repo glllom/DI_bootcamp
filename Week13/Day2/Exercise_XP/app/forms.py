@@ -9,3 +9,16 @@ class AddUser(FlaskForm):
     city = StringField("City", validators=[InputRequired()])
     zipcode = StringField("Zipcode", validators=[InputRequired()])
     submit = SubmitField()
+
+
+class DeleteUser(FlaskForm):
+    user_name = StringField("Name", validators=[InputRequired()])
+    submit = SubmitField()
+
+
+class Login(FlaskForm):
+    name = StringField("Name", validators=[InputRequired()])
+    city = StringField("City", validators=[InputRequired()])
+    submit = SubmitField()
+
+

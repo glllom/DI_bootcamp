@@ -15,4 +15,4 @@ db = SQLAlchemy(flask_app)
 migrate = Migrate(flask_app, db)
 db.create_all()
 
-from app import routes
+from app import routes, error_handlers

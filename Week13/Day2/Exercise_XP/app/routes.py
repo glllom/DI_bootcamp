@@ -2,8 +2,9 @@ import json
 from app import flask_app
 from app import db
 from app.models import Users
-from flask import render_template, redirect, url_for
-from forms import AddUser
+from flask import render_template, redirect, url_for, flash
+from forms import AddUser, DeleteUser, Login
+import re
 
 
 @flask_app.route("/")
@@ -49,6 +50,36 @@ def add_user():
     return render_template('add_user.html', form=form)
 
 
+@flask_app.route('/delete_user', methods=['GET', 'POST'])
+def delete_user():
+    caption = "All the users."
+    users = Users.query.all()
+    form = DeleteUser()
+    if form.validate_on_submit():
+        user_to_delete = Users.query.filter_by(name=form.user_name.data).first()
+        db.session.delete(user_to_delete)
+        db.session.commit()
+        return redirect(url_for("delete_user"))
+    return render_template('delete_user.html', users=users, caption=caption, form=form)
+
+
+@flask_app.route('/login', methods=['GET', 'POST'])
+def login_user():
+    form = Login()
+    if form.validate_on_submit():
+        name = form.name.data
+        city = form.city.data
+        users = Users.query.all()
+        if not is_correct(name) or not is_correct(city):
+            flash(f"{name} is not correct input.")
+        elif (name, city) in list(map(lambda user: (user.name, user.city), users)):
+            flash(f"You logged in as {name}.")
+        else:
+            flash(f"'{name}' doesn't exist or city is wrong. You need do sign up.")
+            return redirect(url_for("add_user"))
+    return render_template('login.html', form=form)
+
+
 def populate():
     with open('users.json', 'r') as f:
         users = json.load(f)
@@ -61,5 +92,10 @@ def populate():
         db.session.commit()
 
 
+def is_correct(word):
+    """
+    Checks if there are only letters, digits or space in word
+    """
+    return bool(re.fullmatch(r'[\w ]+', word))
 
 
