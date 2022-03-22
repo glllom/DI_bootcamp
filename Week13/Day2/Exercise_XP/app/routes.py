@@ -1,18 +1,17 @@
+import re
 import json
-from app import flask_app
 from app import db
+from app import flask_app
+from random import choice
 from app.models import Users
 from flask import render_template, redirect, url_for, flash
 from forms import AddUser, DeleteUser, Login
-import re
-from random import choice
 
 
 @flask_app.route("/")
-@flask_app.route("/1")
-@flask_app.route("/1<logged_user>")
-def show_table_1(logged_user=None):
-    caption = "1. Display all the users (with all the details)."
+@flask_app.route("/login/<logged_user>")
+def show_table(logged_user=None):
+    caption = "Display all the users for admin and all clients for client."
     if logged_user:
         logged_user = (logged_user, Users.query.filter_by(name=logged_user).first().status)
         if logged_user[1] == 'admin':
@@ -24,6 +23,13 @@ def show_table_1(logged_user=None):
     else:
         users = Users.query.filter_by(status="client")
     return render_template('index.html', users=users, caption=caption, logged_user=logged_user)
+
+
+@flask_app.route("/1")
+def show_table_1():
+    caption = "1. Display all the users."
+    users = Users.query.all()
+    return render_template('index.html', users=users, caption=caption)
 
 
 @flask_app.route("/2")
@@ -54,16 +60,17 @@ def add_user():
         new_user = Users(name=form.user_name.data,
                          street=form.street.data,
                          city=form.city.data,
-                         zipcode=form.zipcode.data)
+                         zipcode=form.zipcode.data,
+                         status=('admin' if form.status.data == 'admin' else 'client'))
         db.session.add(new_user)
         db.session.commit()
-        return redirect(url_for("show_table_1"))
+        return redirect(url_for("show_table"))
     return render_template('add_user.html', form=form)
 
 
 @flask_app.route('/delete_user', methods=['GET', 'POST'])
 def delete_user():
-    caption = "All the users."
+    caption = "All users."
     users = Users.query.all()
     form = DeleteUser()
     if form.validate_on_submit():
@@ -85,7 +92,7 @@ def login_user():
             flash(f"{name} is not correct input.")
         elif (name, city) in list(map(lambda user: (user.name, user.city), users)):
             flash(f"You logged in as {name}.")
-            return redirect(url_for("show_table_1", logged_user=name))
+            return redirect(url_for("show_table", logged_user=name))
         else:
             flash(f"'{name}' doesn't exist or city is wrong. You need do sign up.")
             return redirect(url_for("add_user"))

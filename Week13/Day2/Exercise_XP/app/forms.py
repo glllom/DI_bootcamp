@@ -8,6 +8,7 @@ class AddUser(FlaskForm):
     street = StringField("Street", validators=[InputRequired()])
     city = StringField("City", validators=[InputRequired()])
     zipcode = StringField("Zipcode", validators=[InputRequired()])
+    status = StringField("Permissions")
     submit = SubmitField()
 
 
