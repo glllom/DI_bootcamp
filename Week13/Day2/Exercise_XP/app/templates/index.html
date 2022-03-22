@@ -11,12 +11,18 @@
             padding: 5px;
             margin: 30px;
         }
-        th{
+
+        th {
             background-color: lightgray;
         }
     </style>
 </head>
 <body>
+{% if logged_user %}
+    <div style="margin-right: 10px;">
+        <p><span style="font-weight: bold">{{ logged_user[0] }}</span> logged as {{ logged_user[1] }}</p>
+    </div>
+{% endif %}
 <div>
     <table>
         <caption>{{ caption }}</caption>
@@ -27,6 +33,7 @@
             <th>street</th>
             <th>city</th>
             <th>zipcode</th>
+            <th>status</th>
         </tr>
         {% for user in users %}
             <tr>
@@ -35,6 +42,7 @@
                 <td>{{ user.street }}</td>
                 <td>{{ user.city }}</td>
                 <td>{{ user.zipcode }}</td>
+                <td>{{ user.status }}</td>
             </tr>
         {% endfor %}
         </tbody>

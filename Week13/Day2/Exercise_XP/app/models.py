@@ -7,4 +7,5 @@ class Users(db.Model):
     street = db.Column(db.String(16))
     city = db.Column(db.String(16))
     zipcode = db.Column(db.String(16))
+    status = db.Column(db.String(16))
 

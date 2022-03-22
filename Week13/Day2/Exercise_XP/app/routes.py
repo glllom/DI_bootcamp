@@ -5,14 +5,25 @@ from app.models import Users
 from flask import render_template, redirect, url_for, flash
 from forms import AddUser, DeleteUser, Login
 import re
+from random import choice
 
 
 @flask_app.route("/")
 @flask_app.route("/1")
-def show_table_1():
+@flask_app.route("/1<logged_user>")
+def show_table_1(logged_user=None):
     caption = "1. Display all the users (with all the details)."
-    users = Users.query.all()
-    return render_template('index.html', users=users, caption=caption)
+    if logged_user:
+        logged_user = (logged_user, Users.query.filter_by(name=logged_user).first().status)
+        if logged_user[1] == 'admin':
+            print("logged as admin")
+            users = Users.query.all()
+        else:
+            print("logged as client")
+            users = Users.query.filter_by(status="client")
+    else:
+        users = Users.query.filter_by(status="client")
+    return render_template('index.html', users=users, caption=caption, logged_user=logged_user)
 
 
 @flask_app.route("/2")
@@ -74,6 +85,7 @@ def login_user():
             flash(f"{name} is not correct input.")
         elif (name, city) in list(map(lambda user: (user.name, user.city), users)):
             flash(f"You logged in as {name}.")
+            return redirect(url_for("show_table_1", logged_user=name))
         else:
             flash(f"'{name}' doesn't exist or city is wrong. You need do sign up.")
             return redirect(url_for("add_user"))
@@ -98,4 +110,10 @@ def is_correct(word):
     """
     return bool(re.fullmatch(r'[\w ]+', word))
 
+
+def appoint_status():
+    for user in Users.query.all():
+        user.status = choice(['admin', 'client'])
+    db.update(Users)
+    db.session.commit()
 
