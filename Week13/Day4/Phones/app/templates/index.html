@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>411 - Find everyone!</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<div class="search-block">
+<form action="" method="post">
+    {{ form.csrf_token()}}
+<div class="search-type-block">
+    {% for radio in form.search_type %}
+        <div class="search-type-tab" onclick="activate(this)">
+        {{ radio.label }}
+        {{ radio }}
+        </div>
+    {% endfor %}
+</div>
+<div class="fields">
+    {{ form.name(disabled=True) }}
+    {{ form.phone_number(disabled=True) }}
+</div>
+    {{ form.submit() }}
+
+</form>
+</div>
+<script type="text/javascript" src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

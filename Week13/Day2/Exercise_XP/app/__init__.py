@@ -13,6 +13,7 @@ flask_app.secret_key = 'dfshdjkfghsdlkghiudfgdfgjk'
 
 db = SQLAlchemy(flask_app)
 migrate = Migrate(flask_app, db)
+
+from app import routes, error_handlers, models
 db.create_all()
 
-from app import routes, error_handlers
