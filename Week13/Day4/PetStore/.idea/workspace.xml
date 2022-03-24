@@ -4,19 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8dd9279b-24d2-43b0-b4a2-87304ae4b076" name="Changes" comment="Week 13 day 4">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/data_maneger.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/data_maneger.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/petstore.db" beforeDir="false" afterPath="$PROJECT_DIR$/app/petstore.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/routes.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/static/background.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/static/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/pet.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/pet.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/pets.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/pets.html" afterDir="false" />
-    </list>
+    <list default="true" id="8dd9279b-24d2-43b0-b4a2-87304ae4b076" name="Changes" comment="Week 13 day 4" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -104,7 +92,7 @@
       <option name="presentableId" value="Default" />
       <updated>1648111646191</updated>
       <workItem from="1648111653227" duration="14000" />
-      <workItem from="1648111701183" duration="8890000" />
+      <workItem from="1648111701183" duration="9007000" />
     </task>
     <task id="LOCAL-00001" summary="Week 13 day 4">
       <created>1648123961830</created>
@@ -113,7 +101,14 @@
       <option name="project" value="LOCAL" />
       <updated>1648123961831</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Week 13 day 4">
+      <created>1648124006924</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1648124006924</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
