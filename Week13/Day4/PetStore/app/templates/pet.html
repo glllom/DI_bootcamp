@@ -1,11 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Pet Shop</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-</head>
-<body>
-<script type="text/javascript" src="{{ url_for('static', filename='script.js') }}"></script>
-</body>
-</html>
+{% extends "base.html" %}
+{% block main %}
+    <h1>Here you can see info about {{ pet.name }}</h1>
+    <div class="card h-100 shadow-sm">
+                    <img src="{{ pet.image }}" class="card-img-top p-3" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ pet.name }}</h5>
+                        <h5 class="card-title">{{ pet.gender }}</h5>
+                        <p class="card-text">{{ pet.breed }}</p>
+                        <p class="card-text fs-2 fst-italic fw-bold">"{{ pet.details }}"</p>
+                        <p class="card-text">{{ pet.date_of_birth }}</p>
+                        <p class="card-text">${{ pet.price }}</p>
+                        <a href="" class="btn btn-primary">Add to cart</a>
+                    </div>
+                </div>
+{% endblock %}

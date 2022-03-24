@@ -1,11 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Pet Shop</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-</head>
-<body>
-<script type="text/javascript" src="{{ url_for('static', filename='script.js') }}"></script>
-</body>
-</html>
+{% extends "base.html" %}
+{% block main %}
+    <div class="inner">
+    <h1>Welcome to our Pet Shop. Here you can find your best friend.</h1>
+    </div>
+{% endblock %}
