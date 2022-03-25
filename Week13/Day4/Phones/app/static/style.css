@@ -28,10 +28,10 @@ body {
 .search-type-tab {
     width: 100%;
     background-color: rgba(106, 71, 46, 0.98);
-    height: 30px;
+    height: 33px;
     border-radius: 3px;
     margin: 3px;
-    padding-top: 2px;
+    padding-top: 10px;
     color: white;
     text-decoration: none;
     font-size: large;
