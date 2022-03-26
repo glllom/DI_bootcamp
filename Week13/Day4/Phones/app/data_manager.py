@@ -1,7 +1,7 @@
 from faker import Faker
 from faker.providers import phone_number, address
 from random import choices
-from app.models import Person, PhoneNumber
+from app.models import Person, PhoneNumber, Nationality
 from app import db
 
 
@@ -23,4 +23,11 @@ def collect_names(amount=1):
     db.create_all()
 
 
+def add_nations():
+    nationalities = Nationality.query.all()
+    persons = Person.query.all()
+    for person in persons:
+        for nationality in choices(nationalities, k=2):
+            person.nationalities = nationality
 #  collect_names(50)
+#  add_nations()

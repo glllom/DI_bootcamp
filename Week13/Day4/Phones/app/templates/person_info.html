@@ -7,17 +7,20 @@
 </head>
 <body>
 <div class="person-info">
-{% if person %}
-<h1>{{ person.name }}</h1>
-<h3>{{ person.email }}</h3>
-<h2>{{ person.address }}</h2>
-    {% for phone in person.phonenumbers %}
-    <p><span>ph: </span>{{ phone.number }}</p>
-    {% endfor %}
+    {% if person %}
+        <h1>{{ person.name }}</h1>
+        <h3>{{ person.email }}</h3>
+        <h2>{{ person.address }}</h2>
+        {% for nationality in person.nationalities %}
+            <p><span>nationality: </span>{{ nationality.name }}</p>
+        {% endfor %}
+        {% for phone in person.phonenumbers %}
+            <p><span>ph: </span>{{ phone.number }}</p>
+        {% endfor %}
     {% else %}
-    <h2>Unfortunately we didn't find anyone.</h2>
-{% endif %}
-<a href="/">&#8592; New Search</a>
+        <h2>Unfortunately we didn't find anyone.</h2>
+    {% endif %}
+    <a href="/">&#8592; New Search</a>
 </div>
 </body>
 </html>
