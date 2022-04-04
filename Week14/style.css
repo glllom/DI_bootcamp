@@ -1,0 +1,195 @@
+/*animation instruction*/
+@keyframes text {
+    0% {
+        transform: translate(20%, 0);
+    }
+    /*
+        50%{
+          transform: translate(-160%, 0);
+        }
+         */
+    100% {
+        transform: translate(-100%, 0);
+    }
+}
+
+/*Variables*/
+:root {
+    --header-color-1: rgb(11, 11, 100);
+}
+
+/*-----*/
+body {
+    background-color: whitesmoke;
+}
+
+h1 {
+    color: white;
+}
+
+/***********************HEADER*********************/
+.header {
+    display: inline;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.search-news {
+    margin-right: 2px;
+    width: 240px;
+}
+
+/*Main Block*/
+header {
+    position: absolute;
+    overflow: hidden;
+    background-image: linear-gradient(rgb(27, 21, 69), rgb(13, 9, 46));
+}
+ .main-news{
+     margin-left: 330px;
+     margin-right: 330px;
+ }
+.breaking-news {
+    padding-top: 35px;
+    animation: text 45s infinite linear;
+    padding-left: 100%;
+    white-space: pre;
+    background-image: linear-gradient(rgb(27, 21, 69), rgb(13, 9, 46));
+
+}
+
+.sidebar, .navbar {
+    z-index: 0;
+}
+
+/*************** News container *******************/
+a, a:hover {
+    text-decoration: none;
+    color: black;
+}
+
+h6 {
+    font-style: italic;
+}
+
+h6 + p {
+    font-size: larger;
+}
+
+.news-block {
+    display: flex;
+    margin: 10px;
+    height: 300px;
+    background-color: lightgray;
+    padding: 5px;
+    border: 1px solid lightgray;
+    border-radius: 3px;
+    transition: transform 0.15s linear;
+    z-index: 1;
+}
+
+.news-block:hover {
+    transform: translateX(-5px) translateY(-5px);
+}
+
+.news-block > img {
+    max-width: 25%;
+    max-height: 200px;
+}
+
+/********************** sidebars & widgets **********************/
+.sidebar{
+    position: fixed;
+    left: 20px;
+    top: 130px;
+}
+
+/********************** Login Form + Sign Up Form **********************/
+form {
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+
+.form-login {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+}
+#login-popup {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.81);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 2;
+}
+
+#login-popup:target {
+    visibility: visible;
+    opacity: 1;
+    z-index: 2;
+}
+
+.close-popup {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    display: block;
+    z-index: 2;
+    position: fixed;
+    cursor: pointer;
+}
+
+#login-popup > div {
+    text-align: center;
+    z-index: 3;
+    position: relative;
+}
+
+.form-signin .close-button {
+    position: absolute;
+    top: 0;
+    right: 15px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.form-signin .close-button:hover {
+    transform: scale(1.2, 1.2);
+}
+
+
+/**************************404 page not found************************/
+.page_404 {
+    margin-top: 10vh;
+    margin-left: 10vw;
+}
+
+
+.four_zero_four_bg {
+
+    background-image: url(https://i.gifer.com/7yrz.gif);
+    height: 400px;
+    background-position: center;
+}
+
+/*************widgets***************/
+#openweathermap-widget-22 {
+    margin-top: 50px;
+}
+

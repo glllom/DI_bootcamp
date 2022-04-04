@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+<body>
+{% block content %}
+    {{ super() }}
+    {% block leftsidebar %}
+        <sidebar class="sidebar">
+            <!-- WEATHER WIDGET -->
+            <br>
+            <div id="openweathermap-widget-15"></div>
+            <script>window.myWidgetParam ? window.myWidgetParam : window.myWidgetParam = [];
+            window.myWidgetParam.push({
+                id: 15,
+                {% if logged_user and weather_city_id%}
+                    cityid: {{ weather_city_id }},
+                {% else %}
+                    cityid: '293396',
+                {% endif %}
+
+                appid: 'c0779d2b68b69ef6b733d5629c17506f',
+                units: 'metric',
+                containerid: 'openweathermap-widget-15',
+            });
+            (function () {
+                let script = document.createElement('script');
+                script.async = true;
+                script.charset = "utf-8";
+                script.src = "//openweathermap.org/themes/openweathermap/assets/vendor/owm/js/weather-widget-generator.js";
+                let s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(script, s);
+            })();</script>
+        </sidebar>
+    {% endblock %}
+    {% block news_container %}
+        {% for article in data_dict['articles'] %}
+            <a href="{{ article.url }}">
+                <div class="news-block">
+                    <div>
+                        <h3>{{ article.title }}</h3>
+                        <h6>{{ article.description }}</h6>
+                        <p>{{ article.content }}</p>
+                        <p>{{ article.author }}</p>
+                    </div>
+                    <img src="{{ article.urlToImage }}" alt="">
+                </div>
+            </a>
+        {% endfor %}
+    {% endblock %}
+    {% block rightsidebar %}
+        <sidebar class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse ">
+        </sidebar>
+    {% endblock %}
+{% endblock %}
+</body>
