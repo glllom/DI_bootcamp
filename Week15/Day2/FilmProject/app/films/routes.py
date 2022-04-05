@@ -1,12 +1,13 @@
 from flask import render_template, redirect, url_for
 from app.films import films_app
-from app.films.forms import AddFilmForm, AddDirectorForm, AddCategoryForm
+from app.films.forms import AddFilmForm, AddDirectorForm, AddCategoryForm, AddCountryForm
 from app.films import models, db
 
 
 @films_app.route('/')
 def homepage():
-    return render_template('homepage.html')
+    films = models.Film.query.all()
+    return render_template('homepage.html', films=films)
 
 
 @films_app.route('/addFilm', methods=["get", "post"])
@@ -24,13 +25,28 @@ def add_film():
     form.created_in_country.choices = choices_countries
     form.director.choices = choices_directors
     form.category.choices = choices_categories
-    if form.validate_on_submit():
+    form.available_in_countries.choices = choices_countries
+    if form.is_submitted():  # WHY???
+        available_countries = [
+            models.Country.query.get(country)
+            for country in form.available_in_countries.data
+        ]
+        directors = [
+            models.Director.query.get(country)
+            for country in form.director.data
+        ]
+        category = [
+            models.Category.query.get(country)
+            for country in form.category.data
+        ]
         new_film = models.Film(title=form.title.data,
                                release_date=form.release_date.data,
                                created_in_country=form.created_in_country.data,
-                               director=form.director.data)
+                               available_in_countries=available_countries,
+                               director=directors, category=category)
         db.session.add(new_film)
         db.session.commit()
+        return redirect(url_for("homepage"))
     return render_template("film/addFilm.html", form=form)
 
 
@@ -46,7 +62,7 @@ def add_director():
     return render_template("director/addDirector.html", form=form)
 
 
-@films_app.route('/addCategory', methods=["get", "post"])  # temporary
+@films_app.route('/addCategory', methods=["get", "post"])
 def add_category():
     form = AddCategoryForm()
     if form.validate_on_submit():
@@ -57,10 +73,13 @@ def add_category():
     return render_template("film/addCategory.html", form=form)
 
 
-@films_app.route('/addCountry', methods=["get", "post"])  # temporary
+@films_app.route('/addCountry', methods=["get", "post"])
 def add_country():
-    new_country = models.Country(name="usa")
-    db.session.add(new_country)
-    db.session.commit()
-    print("ok")
-    return redirect(url_for("homepage"))
+    form = AddCountryForm()
+    if form.validate_on_submit():
+        new_country = models.Country(name=form.name.data)
+        db.session.add(new_country)
+        db.session.commit()
+        return redirect(url_for("homepage"))
+    return render_template("film/addCategory.html", form=form)
+
