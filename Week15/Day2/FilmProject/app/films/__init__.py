@@ -9,4 +9,5 @@ films_app.config.from_object(Config)
 
 db = SQLAlchemy(films_app)
 migrate = Migrate(films_app, db)
-from app.films import routes
+from app.films import routes, models
+db.create_all()

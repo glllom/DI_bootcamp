@@ -1,9 +1,66 @@
-from flask import Flask, render_template
+from flask import render_template, redirect, url_for
 from app.films import films_app
+from app.films.forms import AddFilmForm, AddDirectorForm, AddCategoryForm
+from app.films import models, db
 
 
 @films_app.route('/')
-def hello_world():
+def homepage():
     return render_template('homepage.html')
 
 
+@films_app.route('/addFilm', methods=["get", "post"])
+def add_film():
+    form = AddFilmForm()
+    choices_countries = [
+        (record.country_id, record.name) for record in models.Country.query.all()
+    ]
+    choices_directors = [
+        (record.director_id, f"{record.first_name} {record.last_name}") for record in models.Director.query.all()
+    ]
+    choices_categories = [
+        (record.category_id, record.name) for record in models.Category.query.all()
+    ]
+    form.created_in_country.choices = choices_countries
+    form.director.choices = choices_directors
+    form.category.choices = choices_categories
+    if form.validate_on_submit():
+        new_film = models.Film(title=form.title.data,
+                               release_date=form.release_date.data,
+                               created_in_country=form.created_in_country.data,
+                               director=form.director.data)
+        db.session.add(new_film)
+        db.session.commit()
+    return render_template("film/addFilm.html", form=form)
+
+
+@films_app.route('/addDirector', methods=["get", "post"])
+def add_director():
+    form = AddDirectorForm()
+    if form.validate_on_submit():
+        new_director = models.Director(first_name=form.first_name.data,
+                                       last_name=form.last_name.data)
+        db.session.add(new_director)
+        db.session.commit()
+        return redirect(url_for("homepage"))
+    return render_template("director/addDirector.html", form=form)
+
+
+@films_app.route('/addCategory', methods=["get", "post"])  # temporary
+def add_category():
+    form = AddCategoryForm()
+    if form.validate_on_submit():
+        new_category = models.Category(name=form.name.data)
+        db.session.add(new_category)
+        db.session.commit()
+        return redirect(url_for("homepage"))
+    return render_template("film/addCategory.html", form=form)
+
+
+@films_app.route('/addCountry', methods=["get", "post"])  # temporary
+def add_country():
+    new_country = models.Country(name="usa")
+    db.session.add(new_country)
+    db.session.commit()
+    print("ok")
+    return redirect(url_for("homepage"))
