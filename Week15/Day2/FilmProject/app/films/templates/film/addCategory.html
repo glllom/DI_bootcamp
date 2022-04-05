@@ -1,0 +1,11 @@
+{% extends "partials/base.html" %}
+{% block body %}
+    {% include "partials/navbar.html" %}
+
+    <h1>Add new Category</h1>
+        <form action="" method="post" class="d-flex flex-column w-25 m-5 p-3 fs-5">
+            {{ form.hidden_tag() }}
+            <div class="d-flex justify-content-between p-1 m-1">{{ form.name.label }}{{ form.name(size=10) }}</div>
+            {{ form.submit(class="btn btn-primary m-3 w-50") }}
+        </form>
+{% endblock %}

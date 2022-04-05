@@ -1,0 +1,16 @@
+{% extends "partials/base.html" %}
+{% block body %}
+    {% include "partials/navbar.html" %}
+
+    <h1>Add new Film</h1>
+        <form action="" method="post" class="d-flex flex-column w-25 m-5 p-3 fs-5">
+            {{ form.hidden_tag() }}
+            <div class="d-flex justify-content-between p-1 m-1">{{ form.title.label }}{{ form.title(size=20) }}</div>
+            <div class="d-flex justify-content-between p-1 m-1">{{ form.release_date.label }}{{ form.release_date }}</div>
+            <div class="d-flex justify-content-between p-1 m-1">{{ form.created_in_country.label }}{{ form.created_in_country }}</div>
+            <div class="d-flex justify-content-between p-1 m-1">{{ form.available_in_countries.label }}{{ form.available_in_countries }}</div>
+            <div class="d-flex justify-content-between p-1 m-1">{{ form.category.label }}{{ form.category }}</div>
+            <div class="d-flex justify-content-between p-1 m-1">{{ form.director.label }}{{ form.director }}</div>
+            {{ form.submit(class="btn btn-primary m-3 w-50") }}
+        </form>
+{% endblock %}

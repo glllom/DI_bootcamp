@@ -1,0 +1,37 @@
+{% extends "partials/base.html" %}
+{% block body %}
+    {% include "partials/navbar.html" %}
+
+    <h1> All the films</h1>
+    <div class="d-flex g-3">
+        {% for film in films %}
+            <div class="card m-3 d-flex flex-direction-column justify-content-between"
+                 style="width: 18rem; border: 5px solid #3e097b; background-color: rgba(215,187,243,0.62);">
+                <h2 class="fw-bold card-title text-dark m-2">{{ film.title }}</h2>
+                <div class="py-2" style="background-color: #3e097b;">
+                    <h5 class="text-light">Date of release: {{ film.release_date }}</h5>
+                    <h5 class="text-light">Created in: {{ film.country.get_name() }}</h5>
+                    <p class="text-light">Available in countries:<span>
+        {% for country in film.available_in_countries %}
+            {% if loop.index > 1 %} , {% endif %}
+            {{ country.get_name() }}
+        {% endfor %}
+    </span></p>
+                    <p class="text-light">Category:<span>
+        {% for category in film.category %}
+            {% if loop.index > 1 %} , {% endif %}
+            {{ category.name }}
+        {% endfor %}
+    </span></p>
+                    <p class="text-light">Director:<span>
+            {% for director in film.director %}
+                {% if loop.index > 1 %} , {% endif %}
+                {{ director.first_name }}
+                {{ director.last_name }}
+            {% endfor %}
+        </span></p>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}
