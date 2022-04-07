@@ -1,0 +1,76 @@
+body{
+    padding: 0;
+    margin: 0mm;
+}
+
+.navbar{
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    background-color: black;
+    justify-content: space-between;
+    margin-bottom: 0;
+ }
+
+.logo{
+    padding: 10px;
+    margin-left: 10px;
+}
+
+ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 30px;
+    text-align: center;
+    
+ }
+ li{
+     list-style-type: none;
+     color:white;
+     width: 150px;
+     font-size: 100%;
+ }
+
+ header{
+     background-image: url("./img/image1.webp");
+     width: 100vw;
+     height: 85vh;
+     background-repeat: no-repeat;
+     background-size: cover;
+ }
+
+ .person-name{
+     color: darkgreen;
+     margin-top: 0;
+     margin-bottom: 0;
+     margin-left: 40px;
+     padding-top: 30px;
+     font-size: 144px;
+     font-style: italic;
+     padding: 5px;
+     
+ }
+
+.description{
+    color:white;
+    width: 33%;
+    margin: 0;
+    margin-left: 40px;
+    font-size: 30px;
+    padding: 0;
+    margin-bottom: 0;
+}
+
+.portrait{
+    height: 220px;
+    margin-left: 40px;
+}
+
+footer{
+    height: 5vh;
+    color: red;
+    text-align: center;
+    font-size: 30px;   
+    background-color: black; 
+}

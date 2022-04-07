@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Animation</title>
+    <style>
+        .square:last-of-type {
+            -webkit-transform: scale(0.1);
+            -ms-transform: scale(0.1);
+            transform: scale(0.1);
+        }
+
+        .square {
+            -webkit-transform: scale(1);
+            -ms-transform: scale(1);
+            transform: scale(1);
+            transition:all 0.5s ease;
+        }
+        .creator{
+            transition: background-color 0.15s ease;
+        }
+    </style>
+</head>
+
+<body style="background-color: CornflowerBlue; margin: 0;">
+    <div class="container" style="display: flex; flex-wrap: wrap;" id="container">
+        <div class="creator" id="creator" onclick="createSquare();" style="width: 100px;
+        height:100px;
+        background-color: PowderBlue;
+        font-size: 120px; font-weight: 1000;
+        padding: 30px;
+        line-height: 0.8em;
+        text-align: center;">+</div>
+    </div>
+    <script src="./script_ex1.js"></script>
+</body>
+
+</html>

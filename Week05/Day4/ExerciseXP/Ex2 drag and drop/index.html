@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag & Drop</title>
+    <style>
+        #container {
+            width: 400px;
+            height: 400px;
+            position: relative;
+            background: lightgrey;
+            border: black solid;
+            margin-bottom: 30px;
+        }
+
+        .box {
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            border-radius: 10%;
+        }
+
+        .red {
+            left: 170px;
+            top: 600px;
+            background-color: red;
+        }
+
+        .green {
+            left: 470px;
+            top: 100px;
+            background-color: green;
+        }
+
+        .blue {
+            left: 270px;
+            top: 700px;
+            background-color: blue;
+        }
+
+        .brown {
+            left: 770px;
+            top: 610px;
+            background-color: brown;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container"></div>
+    <div class="box red" draggable="true"></div>
+    <div class="box green" draggable="true"></div>
+    <div class="box blue" draggable="true"></div>
+    <div class="box brown" draggable="true"></div>
+    <script>
+        let elements = document.getElementsByClassName("box");
+        let container = document.getElementById("container");
+        for (element of elements) {
+            element.addEventListener("dragend", function (event) {
+                event.target.style.left = event.clientX + "px";
+                event.target.style.top = event.clientY + "px";
+                if (isIntoBox(event.target, container))
+                    ToArrange(event.target, container);
+            });
+        }
+
+        function isIntoBox(element, container) {
+            leftTopCornerOfBox = [parseInt(getComputedStyle(container).left), parseInt(getComputedStyle(container).top)];
+            dimentionsOfBox = [parseInt(getComputedStyle(container).width), parseInt(getComputedStyle(container).height)];
+            leftTopCornerOfElement = [parseInt(getComputedStyle(element).left), parseInt(getComputedStyle(element).top)];
+            return (leftTopCornerOfElement[0] > leftTopCornerOfBox[0] &&
+                leftTopCornerOfElement[1] > leftTopCornerOfBox[1] &&
+                leftTopCornerOfElement[0] < leftTopCornerOfBox[0] + dimentionsOfBox[0] &&
+                leftTopCornerOfElement[1] < leftTopCornerOfBox[1] + dimentionsOfBox[1]);
+        }
+
+        function ToArrange(element, container) {
+            element.setAttribute("draggable", false);
+            element.style.position = "relative";
+            element.style.margin = "10px";
+            element.style.left = "0";
+            element.style.top = "0";
+            container.appendChild(element);
+        }
+    </script>
+</body>
+
+</html>
