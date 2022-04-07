@@ -83,3 +83,47 @@ def add_country():
         return redirect(url_for("homepage"))
     return render_template("film/addCategory.html", form=form)
 
+
+@films_app.route('/modifyFilm/<int:film_id>', methods=["get", "post"])
+def modify_film(film_id):
+    form = AddFilmForm()
+    film = models.Film.query.get(film_id)
+    choices_countries = [
+        (record.country_id, record.name) for record in models.Country.query.all()
+    ]
+    choices_directors = [
+        (record.director_id, f"{record.first_name} {record.last_name}") for record in models.Director.query.all()
+    ]
+    choices_categories = [
+        (record.category_id, record.name) for record in models.Category.query.all()
+    ]
+    form.created_in_country.choices = choices_countries
+    form.director.choices = choices_directors
+    form.category.choices = choices_categories
+    form.available_in_countries.choices = choices_countries
+    form.title.data = film.title
+    form.release_date.data = film.release_date
+    form.created_in_country.data = film.created_in_country
+    form.created_in_country.data = film.created_in_country
+
+    if form.is_submitted():  # WHY???
+        available_countries = [
+            models.Country.query.get(country)
+            for country in form.available_in_countries.data
+        ]
+        directors = [
+            models.Director.query.get(country)
+            for country in form.director.data
+        ]
+        category = [
+            models.Category.query.get(country)
+            for country in form.category.data
+        ]
+        film.update(title=form.title.data,
+                    release_date=form.release_date.data,
+                    created_in_country=form.created_in_country.data,
+                    available_in_countries=available_countries,
+                    director=directors, category=category)
+        db.session.commit()
+        return redirect(url_for("homepage"))
+    return render_template("film/addFilm.html", form=form)

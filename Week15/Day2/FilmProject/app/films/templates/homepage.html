@@ -30,6 +30,8 @@
                 {{ director.last_name }}
             {% endfor %}
         </span></p>
+                    <a class="btn btn-outline-light" href="{{ url_for('modify_film', film_id=film.film_id)}}">Modify
+                        info</a>
                 </div>
             </div>
         {% endfor %}
