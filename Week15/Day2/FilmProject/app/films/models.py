@@ -49,3 +49,12 @@ class Film(db.Model):
     available_in_countries = db.relationship("Country", secondary=films_countries)
     category = db.relationship("Category", secondary=films_category)
     director = db.relationship("Director", secondary=films_director)
+
+    def update(self, title, release_date, created_in_country, available_in_countries, category, director):
+        self.title = title
+        self.release_date = release_date
+        self.created_in_country = created_in_country
+        self.available_in_countries = available_in_countries
+        self.category = category
+        self.director = director
+        db.session.commit()
