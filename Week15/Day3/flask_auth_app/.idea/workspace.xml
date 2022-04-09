@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f065cd2c-12b6-422a-b613-c957b841ee92" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/flask_auth_app.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/auth/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/auth/auth.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/auth/templates/base.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/auth/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/auth/templates/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/auth/templates/profile.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/auth/templates/signup.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/config.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/db.sqlite" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/main/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/main/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/main/templates/base.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/main/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/main/templates/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/main/templates/profile.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/main/templates/signup.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wsgi.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day5/CryptoCurrenciesProject/webapp/auth/templates/auth/base.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day5/CryptoCurrenciesProject/webapp/auth/templates/auth/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day5/CryptoCurrenciesProject/webapp/auth/templates/auth/profile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Day5/CryptoCurrenciesProject/.idea/dataSources/3e2c5f12-9d76-42e7-8d86-6cbb1e18ee9f.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Day5/CryptoCurrenciesProject/.idea/dataSources/3e2c5f12-9d76-42e7-8d86-6cbb1e18ee9f.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Day5/CryptoCurrenciesProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Day5/CryptoCurrenciesProject/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Day5/CryptoCurrenciesProject/webapp/auth/routes.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../Day5/CryptoCurrenciesProject/webapp/auth/routes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Day5/CryptoCurrenciesProject/webapp/auth/templates/auth/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../Day5/CryptoCurrenciesProject/webapp/auth/templates/auth/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Day5/CryptoCurrenciesProject/webapp/auth/templates/auth/signup.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../Day5/CryptoCurrenciesProject/webapp/auth/templates/auth/signup.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Day5/CryptoCurrenciesProject/webapp/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../Day5/CryptoCurrenciesProject/webapp/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Day5/CryptoCurrenciesProject/wsgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../Day5/CryptoCurrenciesProject/wsgi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Day5old/CryptoCurrenciesProject/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Day5old/CryptoCurrenciesProject/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Day5old/CryptoCurrenciesProject/.idea/CryptoCurrenciesProject.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Day5old/CryptoCurrenciesProject/.idea/dataSources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Day5old/CryptoCurrenciesProject/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Day5old/CryptoCurrenciesProject/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Day5old/CryptoCurrenciesProject/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Day5old/CryptoCurrenciesProject/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Day5old/CryptoCurrenciesProject/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Day5old/CryptoCurrenciesProject/migrations/README" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Day5old/CryptoCurrenciesProject/migrations/alembic.ini" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Day5old/CryptoCurrenciesProject/migrations/env.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Day5old/CryptoCurrenciesProject/migrations/script.py.mako" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Day5old/CryptoCurrenciesProject/test.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Day5old/CryptoCurrenciesProject/webapp/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Day5old/CryptoCurrenciesProject/webapp/config.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Day5old/CryptoCurrenciesProject/webapp/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Day5old/CryptoCurrenciesProject/webapp/routes.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Day5old/CryptoCurrenciesProject/webapp/templates/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Day5old/CryptoCurrenciesProject/webapp/templates/specifics.py" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="27W7uKXyITeD1RULYiREToBcJcQ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$USER_HOME$/venv/bin/python" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="wsgi" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="flask_auth_app" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$USER_HOME$/venv/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/wsgi.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.wsgi" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f065cd2c-12b6-422a-b613-c957b841ee92" name="Changes" comment="" />
+      <created>1649424209653</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1649424209653</updated>
+      <workItem from="1649424212715" duration="2136000" />
+      <workItem from="1649438063430" duration="77000" />
+      <workItem from="1649512998596" duration="58000" />
+      <workItem from="1649513454709" duration="281000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/flask_auth_app$wsgi.coverage" NAME="wsgi Coverage Results" MODIFIED="1649513033662" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+</project>
