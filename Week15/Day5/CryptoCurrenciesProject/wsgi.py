@@ -1,8 +1,5 @@
-from webapp import db, create_app
-from flask_migrate import Migrate
+from webapp import cripto_app
 
 if __name__ == '__main__':
-    app = create_app()
-    migrate = Migrate(app, db)
-    db.create_all(app=app)
-    app.run(debug=True, port=5500)
+    cripto_app.run(debug=True, port=5500)
+
