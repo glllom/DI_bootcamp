@@ -1287,70 +1287,25 @@
     <table id="473" parent="163" name="sqlite_master">
       <System>1</System>
     </table>
-    <table id="474" parent="163" name="users"/>
-    <column id="475" parent="473" name="type">
+    <column id="474" parent="473" name="type">
       <DataType>text|0s</DataType>
       <Position>1</Position>
     </column>
-    <column id="476" parent="473" name="name">
+    <column id="475" parent="473" name="name">
       <DataType>text|0s</DataType>
       <Position>2</Position>
     </column>
-    <column id="477" parent="473" name="tbl_name">
+    <column id="476" parent="473" name="tbl_name">
       <DataType>text|0s</DataType>
       <Position>3</Position>
     </column>
-    <column id="478" parent="473" name="rootpage">
+    <column id="477" parent="473" name="rootpage">
       <DataType>int|0s</DataType>
       <Position>4</Position>
     </column>
-    <column id="479" parent="473" name="sql">
+    <column id="478" parent="473" name="sql">
       <DataType>text|0s</DataType>
       <Position>5</Position>
     </column>
-    <column id="480" parent="474" name="id">
-      <DataType>INTEGER|0s</DataType>
-      <NotNull>1</NotNull>
-      <Position>1</Position>
-    </column>
-    <column id="481" parent="474" name="username">
-      <DataType>VARCHAR(32)|0s</DataType>
-      <NotNull>1</NotNull>
-      <Position>2</Position>
-    </column>
-    <column id="482" parent="474" name="email">
-      <DataType>VARCHAR(32)|0s</DataType>
-      <NotNull>1</NotNull>
-      <Position>3</Position>
-    </column>
-    <column id="483" parent="474" name="password">
-      <DataType>VARCHAR(32)|0s</DataType>
-      <NotNull>1</NotNull>
-      <Position>4</Position>
-    </column>
-    <index id="484" parent="474" name="sqlite_autoindex_users_1">
-      <ColNames>username</ColNames>
-      <ColumnCollations></ColumnCollations>
-      <NameSurrogate>1</NameSurrogate>
-      <Unique>1</Unique>
-    </index>
-    <index id="485" parent="474" name="sqlite_autoindex_users_2">
-      <ColNames>email</ColNames>
-      <ColumnCollations></ColumnCollations>
-      <NameSurrogate>1</NameSurrogate>
-      <Unique>1</Unique>
-    </index>
-    <key id="486" parent="474">
-      <ColNames>id</ColNames>
-      <Primary>1</Primary>
-    </key>
-    <key id="487" parent="474">
-      <ColNames>username</ColNames>
-      <UnderlyingIndexName>sqlite_autoindex_users_1</UnderlyingIndexName>
-    </key>
-    <key id="488" parent="474">
-      <ColNames>email</ColNames>
-      <UnderlyingIndexName>sqlite_autoindex_users_2</UnderlyingIndexName>
-    </key>
   </database-model>
 </dataSource>

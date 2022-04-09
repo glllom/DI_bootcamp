@@ -12,4 +12,4 @@ class Config(object):
 
 
 class Api(object):
-    CRIPTO_API = "15daef1e-3fcc-46e5-8dcb-694f950ab633"
+    CRYPTO_API = "15daef1e-3fcc-46e5-8dcb-694f950ab633"
