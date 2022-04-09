@@ -8,7 +8,7 @@ cripto_app = Flask(__name__)
 cripto_app.config.from_object(Config)
 
 login_manager = LoginManager()
-login_manager.login_view = 'auth.login'
+login_manager.login_view = 'login'
 login_manager.init_app(cripto_app)
 
 db = SQLAlchemy(cripto_app)
@@ -21,4 +21,4 @@ db.create_all()
 
 @login_manager.user_loader
 def load_user(user_id):
-    return models.User.query.get(int(user_id))
+    return models.Users.query.get(int(user_id))

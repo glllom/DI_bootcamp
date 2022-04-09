@@ -5,66 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="866223f3-25cc-4366-8b98-edf0c49d3a93" name="Changes" comment="Week 15 Day 5">
-      <change afterPath="$PROJECT_DIR$/../../Day3/flask_auth_app/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Day3/flask_auth_app/.idea/flask_auth_app.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Day3/flask_auth_app/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Day3/flask_auth_app/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Day3/flask_auth_app/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Day3/flask_auth_app/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Day3/flask_auth_app/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Day3/flask_auth_app/project/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Day3/flask_auth_app/project/auth/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Day3/flask_auth_app/project/auth/auth.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Day3/flask_auth_app/project/auth/templates/base.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Day3/flask_auth_app/project/auth/templates/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Day3/flask_auth_app/project/auth/templates/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Day3/flask_auth_app/project/auth/templates/profile.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Day3/flask_auth_app/project/auth/templates/signup.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Day3/flask_auth_app/project/config.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Day3/flask_auth_app/project/db.sqlite" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Day3/flask_auth_app/project/main/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Day3/flask_auth_app/project/main/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Day3/flask_auth_app/project/main/templates/base.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Day3/flask_auth_app/project/main/templates/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Day3/flask_auth_app/project/main/templates/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Day3/flask_auth_app/project/main/templates/profile.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Day3/flask_auth_app/project/main/templates/signup.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Day3/flask_auth_app/project/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Day3/flask_auth_app/wsgi.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/templates/base.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/templates/navbar.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day3/flask_auth_app/project/auth/.auth.py.kate-swp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/templates/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/templates/signup.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/3e2c5f12-9d76-42e7-8d86-6cbb1e18ee9f.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/3e2c5f12-9d76-42e7-8d86-6cbb1e18ee9f.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/webapp/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/auth/auth.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/auth/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/auth/routes.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/auth/templates/auth/login.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/auth/templates/auth/signup.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/cripto.db" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/cripto.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/webapp/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/webapp/routes.py" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/routes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/templates/base.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/webapp/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wsgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/wsgi.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Day5old/CryptoCurrenciesProject/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Day5old/CryptoCurrenciesProject/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Day5old/CryptoCurrenciesProject/.idea/CryptoCurrenciesProject.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Day5old/CryptoCurrenciesProject/.idea/dataSources.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Day5old/CryptoCurrenciesProject/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Day5old/CryptoCurrenciesProject/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Day5old/CryptoCurrenciesProject/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Day5old/CryptoCurrenciesProject/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Day5old/CryptoCurrenciesProject/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Day5old/CryptoCurrenciesProject/migrations/README" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Day5old/CryptoCurrenciesProject/migrations/alembic.ini" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Day5old/CryptoCurrenciesProject/migrations/env.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Day5old/CryptoCurrenciesProject/migrations/script.py.mako" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Day5old/CryptoCurrenciesProject/test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Day5old/CryptoCurrenciesProject/webapp/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Day5old/CryptoCurrenciesProject/webapp/config.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Day5old/CryptoCurrenciesProject/webapp/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Day5old/CryptoCurrenciesProject/webapp/routes.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Day5old/CryptoCurrenciesProject/webapp/templates/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Day5old/CryptoCurrenciesProject/webapp/templates/specifics.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/templates/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/templates/navbar.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,6 +43,7 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIEW_PUSH_PROTECTED_ONLY" value="true" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -117,6 +70,11 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PythonContentEntriesConfigurable" />
+  </component>
+  <component name="Push.Settings">
+    <force-push-targets>
+      <force-push-target remote-path="origin" branch="main" />
+    </force-push-targets>
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -187,7 +145,7 @@
       <workItem from="1649403055902" duration="7270000" />
       <workItem from="1649438142096" duration="1346000" />
       <workItem from="1649513058222" duration="394000" />
-      <workItem from="1649513737599" duration="4953000" />
+      <workItem from="1649513737599" duration="9068000" />
     </task>
     <task id="LOCAL-00001" summary="Week 15 Day 2">
       <created>1649359559983</created>
@@ -210,7 +168,21 @@
       <option name="project" value="LOCAL" />
       <updated>1649422671703</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Week 15 Day 5">
+      <created>1649520031943</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1649520031943</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Week 15 Day 5">
+      <created>1649520053999</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1649520053999</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -230,9 +202,10 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Week 15 Day 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Week 15 Day 2" />
+    <MESSAGE value="Week 15 Day 5" />
+    <option name="LAST_COMMIT_MESSAGE" value="Week 15 Day 5" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/CryptoCurrenciesProject$wsgi.coverage" NAME="wsgi Coverage Results" MODIFIED="1649519641168" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/CryptoCurrenciesProject$wsgi.coverage" NAME="wsgi Coverage Results" MODIFIED="1649524045142" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
