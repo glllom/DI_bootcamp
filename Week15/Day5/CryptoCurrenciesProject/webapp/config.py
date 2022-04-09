@@ -9,3 +9,7 @@ class Config(object):
     SQLALCHEMY_TRACK_MODIFICATIONS = False
     DEBUG = True
     DATABASE = "/cripto.db"
+
+
+class Api(object):
+    CRIPTO_API = "15daef1e-3fcc-46e5-8dcb-694f950ab633"
