@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+    {% include "navbar.html" %}
+    <h1>Hi, {{ current_user.username }}</h1>
+    <div class="main-form">
+    <form action="" method="post">
+        {{ form.csrf_token() }}
+        {{ form.names(class="form-select w-25 m-2") }}
+        {{ form.submit(class="btn btn-primary m-2") }}
+    </form>
+</div>
+{% endblock %}

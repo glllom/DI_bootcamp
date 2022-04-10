@@ -1,9 +1,12 @@
+import flask_login
 from flask import render_template, redirect, url_for, request, flash
 from flask_login import login_user, login_required, logout_user
 
-from webapp import cripto_app, models, db
+from webapp import cripto_app, models, db, login_manager
 from werkzeug.security import generate_password_hash, check_password_hash
-import flask_login
+from webapp import api
+from webapp.forms import SelectCoin
+from webapp.models import CryptoCurrencies
 
 
 @cripto_app.route('/')
@@ -48,7 +51,7 @@ def signup_post():
         flash('Email address already exists')
         return redirect(url_for('signup'))
 
-    new_user = models.Users(email=email,
+    new_user = models.Users(email=email,  # Why ???
                             username=name,
                             password=generate_password_hash(password, method='sha256'))
     db.session.add(new_user)
@@ -62,3 +65,24 @@ def signup_post():
 def logout():
     logout_user()
     return redirect(url_for('homepage'))
+
+
+@cripto_app.route('/profile', methods=['GET', 'POST'])
+@login_required
+def profile():
+    form = SelectCoin()
+    form.names.choices = api.get_active_cryptocurrency()
+    if form.is_submitted():
+        # print(api.get_cripto(form.names.data))
+        response = api.get_cripto(form.names.data)
+        new_crypto = CryptoCurrencies(
+            crypto_id=response["id"],
+            name=response["name"],
+            symbol=response["symbol"],
+            slug=response["slug"],
+            first_historical_data=response["first_historical_data"],
+            last_historical_data=response["last_historical_data"]
+        )
+        db.session.add(new_crypto)
+        db.session.commit()
+    return render_template('profile.html', form=form)

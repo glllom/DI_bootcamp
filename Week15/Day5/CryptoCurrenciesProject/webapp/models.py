@@ -1,4 +1,3 @@
-# sourcery skip: avoid-builtin-shadow
 from webapp import db
 from flask_login import UserMixin
 from webapp.config import Api
@@ -7,17 +6,20 @@ from requests.exceptions import ConnectionError, Timeout, TooManyRedirects
 import json
 
 users_crypto = db.Table('users_crypto',
-                        db.Column('id', db.Integer, db.ForeignKey('Users.id')),
-                        db.Column('crypto_id', db.Integer, db.ForeignKey('CryptoCurrencies.crypto_id'))
+                        db.Column('users_id', db.Integer, db.ForeignKey('users.id')),
+                        db.Column('crypto_id', db.Integer, db.ForeignKey('crypto_currencies.crypto_id'))
                         )
 
 
 class Users(UserMixin, db.Model):
-    id = db.Column(db.Integer, primary_key=True, nullable=False, autoincrement=True)
+    id = db.Column(db.Integer, primary_key=True, nullable=False, autoincrement=True) #Why?
     username = db.Column("username", db.String(32), unique=True, nullable=False)
     email = db.Column(db.String(32), unique=True, nullable=False)
     password = db.Column(db.String(32), nullable=False)
     crypto = db.relationship("CryptoCurrencies", secondary=users_crypto)
+
+    def append_crypto(self, crypto):
+        self.crypto = crypto
 
 
 class CryptoCurrencies(db.Model):
@@ -27,7 +29,7 @@ class CryptoCurrencies(db.Model):
     slug = db.Column("slug", db.String(32), unique=True)
     first_historical_data = db.Column("first_historical_data", db.String(32))
     last_historical_data = db.Column("last_historical_data", db.String(32))
-    is_active = db.Column("is_active", db.Integer)
+    is_active = db.Column("is_active", db.Integer, default=1)
 
     def get_info(self):
         """Receives a cryptocurrency id from the table, and uses the API to fetch information about it."""
@@ -48,5 +50,4 @@ class CryptoCurrencies(db.Model):
             if coin["id"] == self.crypto_id:
                 return coin
 
-# qqq = CryptoCurrencies()
-# qqq.get_info()
+
