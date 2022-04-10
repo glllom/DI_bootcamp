@@ -2,15 +2,24 @@ import flask_login
 from flask import render_template, redirect, url_for, request, flash
 from flask_login import login_user, login_required, logout_user
 
-from webapp import cripto_app, models, db, login_manager
+from webapp import cripto_app, db, login_manager
 from werkzeug.security import generate_password_hash, check_password_hash
 from webapp import api
 from webapp.forms import SelectCoin
-from webapp.models import CryptoCurrencies
+from webapp.models import CryptoCurrencies, Users
 
 
 @cripto_app.route('/')
 def homepage():
+    # crypto = CryptoCurrencies.query.get(2)
+    # print(crypto.name)
+    # new_user = Users(email="email",
+    #                  username="name",
+    #                  password="password", crypto=[crypto])
+    # print(new_user)
+    # db.session.add(new_user)
+    # db.session.commit()
+
     return render_template("index.html")
 
 
@@ -24,7 +33,7 @@ def login_post():
     email = request.form.get('email')
     password = request.form.get('password')
     remember = bool(request.form.get('remember'))
-    user = models.Users.query.filter_by(email=email).first()
+    user = Users.query.filter_by(email=email).first()
     if not user:
         flash("This user doesn't exist")
         return redirect(url_for('login'))
@@ -46,14 +55,14 @@ def signup_post():
     name = request.form.get('name')
     password = request.form.get('password')
 
-    if user := models.Users.query.filter_by(email=email).first():
+    if user := Users.query.filter_by(email=email).first():
         print('Email address already exists')
         flash('Email address already exists')
         return redirect(url_for('signup'))
 
-    new_user = models.Users(email=email,  # Why ???
-                            username=name,
-                            password=generate_password_hash(password, method='sha256'))
+    new_user = Users(email=email,
+                     username=name,
+                     password=generate_password_hash(password, method='sha256'))
     db.session.add(new_user)
     db.session.commit()
 
@@ -73,7 +82,6 @@ def profile():
     form = SelectCoin()
     form.names.choices = api.get_active_cryptocurrency()
     if form.is_submitted():
-        # print(api.get_cripto(form.names.data))
         response = api.get_cripto(form.names.data)
         new_crypto = CryptoCurrencies(
             crypto_id=response["id"],
@@ -84,5 +92,6 @@ def profile():
             last_historical_data=response["last_historical_data"]
         )
         db.session.add(new_crypto)
+        flask_login.current_user.crypto.append(new_crypto)
         db.session.commit()
     return render_template('profile.html', form=form)

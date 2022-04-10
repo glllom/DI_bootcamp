@@ -12,7 +12,7 @@ users_crypto = db.Table('users_crypto',
 
 
 class Users(UserMixin, db.Model):
-    id = db.Column(db.Integer, primary_key=True, nullable=False, autoincrement=True) #Why?
+    id = db.Column(db.Integer, primary_key=True, nullable=False, autoincrement=True)
     username = db.Column("username", db.String(32), unique=True, nullable=False)
     email = db.Column(db.String(32), unique=True, nullable=False)
     password = db.Column(db.String(32), nullable=False)
@@ -49,5 +49,3 @@ class CryptoCurrencies(db.Model):
         for coin in data["data"]:
             if coin["id"] == self.crypto_id:
                 return coin
-
-
