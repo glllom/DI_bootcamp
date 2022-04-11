@@ -3,8 +3,6 @@ import os
 import json
 dirname = os.path.dirname(__file__)
 
-secret_key = b'_5#y2L"F4Q8z\n\xec]/'
-
 
 def get_all_pokemons():
     all_pokemons = []
@@ -29,8 +27,8 @@ def download_image(url, filename):
             if not block:
                 break
             handle.write(block)
-    return
 
 
-# get_all_pokemons()
+
+
 
