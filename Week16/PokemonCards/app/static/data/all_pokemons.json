@@ -1,0 +1,4240 @@
+[
+    {
+        "id": 1,
+        "name": "bulbasaur",
+        "type": [
+            "grass",
+            "poison"
+        ],
+        "base_price": 45
+    },
+    {
+        "id": 2,
+        "name": "ivysaur",
+        "type": [
+            "grass",
+            "poison"
+        ],
+        "base_price": 60
+    },
+    {
+        "id": 3,
+        "name": "venusaur",
+        "type": [
+            "grass",
+            "poison"
+        ],
+        "base_price": 80
+    },
+    {
+        "id": 4,
+        "name": "charmander",
+        "type": [
+            "fire"
+        ],
+        "base_price": 39
+    },
+    {
+        "id": 5,
+        "name": "charmeleon",
+        "type": [
+            "fire"
+        ],
+        "base_price": 58
+    },
+    {
+        "id": 6,
+        "name": "charizard",
+        "type": [
+            "fire",
+            "flying"
+        ],
+        "base_price": 78
+    },
+    {
+        "id": 7,
+        "name": "squirtle",
+        "type": [
+            "water"
+        ],
+        "base_price": 44
+    },
+    {
+        "id": 8,
+        "name": "wartortle",
+        "type": [
+            "water"
+        ],
+        "base_price": 59
+    },
+    {
+        "id": 9,
+        "name": "blastoise",
+        "type": [
+            "water"
+        ],
+        "base_price": 79
+    },
+    {
+        "id": 10,
+        "name": "caterpie",
+        "type": [
+            "bug"
+        ],
+        "base_price": 45
+    },
+    {
+        "id": 11,
+        "name": "metapod",
+        "type": [
+            "bug"
+        ],
+        "base_price": 50
+    },
+    {
+        "id": 12,
+        "name": "butterfree",
+        "type": [
+            "bug",
+            "flying"
+        ],
+        "base_price": 60
+    },
+    {
+        "id": 13,
+        "name": "weedle",
+        "type": [
+            "bug",
+            "poison"
+        ],
+        "base_price": 40
+    },
+    {
+        "id": 14,
+        "name": "kakuna",
+        "type": [
+            "bug",
+            "poison"
+        ],
+        "base_price": 45
+    },
+    {
+        "id": 15,
+        "name": "beedrill",
+        "type": [
+            "bug",
+            "poison"
+        ],
+        "base_price": 65
+    },
+    {
+        "id": 16,
+        "name": "pidgey",
+        "type": [
+            "normal",
+            "flying"
+        ],
+        "base_price": 40
+    },
+    {
+        "id": 17,
+        "name": "pidgeotto",
+        "type": [
+            "normal",
+            "flying"
+        ],
+        "base_price": 63
+    },
+    {
+        "id": 18,
+        "name": "pidgeot",
+        "type": [
+            "normal",
+            "flying"
+        ],
+        "base_price": 83
+    },
+    {
+        "id": 19,
+        "name": "rattata",
+        "type": [
+            "normal"
+        ],
+        "base_price": 30
+    },
+    {
+        "id": 20,
+        "name": "raticate",
+        "type": [
+            "normal"
+        ],
+        "base_price": 55
+    },
+    {
+        "id": 21,
+        "name": "spearow",
+        "type": [
+            "normal",
+            "flying"
+        ],
+        "base_price": 40
+    },
+    {
+        "id": 22,
+        "name": "fearow",
+        "type": [
+            "normal",
+            "flying"
+        ],
+        "base_price": 65
+    },
+    {
+        "id": 23,
+        "name": "ekans",
+        "type": [
+            "poison"
+        ],
+        "base_price": 35
+    },
+    {
+        "id": 24,
+        "name": "arbok",
+        "type": [
+            "poison"
+        ],
+        "base_price": 60
+    },
+    {
+        "id": 25,
+        "name": "pikachu",
+        "type": [
+            "electric"
+        ],
+        "base_price": 35
+    },
+    {
+        "id": 26,
+        "name": "raichu",
+        "type": [
+            "electric"
+        ],
+        "base_price": 60
+    },
+    {
+        "id": 27,
+        "name": "sandshrew",
+        "type": [
+            "ground"
+        ],
+        "base_price": 50
+    },
+    {
+        "id": 28,
+        "name": "sandslash",
+        "type": [
+            "ground"
+        ],
+        "base_price": 75
+    },
+    {
+        "id": 29,
+        "name": "nidoran-f",
+        "type": [
+            "poison"
+        ],
+        "base_price": 55
+    },
+    {
+        "id": 30,
+        "name": "nidorina",
+        "type": [
+            "poison"
+        ],
+        "base_price": 70
+    },
+    {
+        "id": 31,
+        "name": "nidoqueen",
+        "type": [
+            "poison",
+            "ground"
+        ],
+        "base_price": 90
+    },
+    {
+        "id": 32,
+        "name": "nidoran-m",
+        "type": [
+            "poison"
+        ],
+        "base_price": 46
+    },
+    {
+        "id": 33,
+        "name": "nidorino",
+        "type": [
+            "poison"
+        ],
+        "base_price": 61
+    },
+    {
+        "id": 34,
+        "name": "nidoking",
+        "type": [
+            "poison",
+            "ground"
+        ],
+        "base_price": 81
+    },
+    {
+        "id": 35,
+        "name": "clefairy",
+        "type": [
+            "fairy"
+        ],
+        "base_price": 70
+    },
+    {
+        "id": 36,
+        "name": "clefable",
+        "type": [
+            "fairy"
+        ],
+        "base_price": 95
+    },
+    {
+        "id": 37,
+        "name": "vulpix",
+        "type": [
+            "fire"
+        ],
+        "base_price": 38
+    },
+    {
+        "id": 38,
+        "name": "ninetales",
+        "type": [
+            "fire"
+        ],
+        "base_price": 73
+    },
+    {
+        "id": 39,
+        "name": "jigglypuff",
+        "type": [
+            "normal",
+            "fairy"
+        ],
+        "base_price": 115
+    },
+    {
+        "id": 40,
+        "name": "wigglytuff",
+        "type": [
+            "normal",
+            "fairy"
+        ],
+        "base_price": 140
+    },
+    {
+        "id": 41,
+        "name": "zubat",
+        "type": [
+            "poison",
+            "flying"
+        ],
+        "base_price": 40
+    },
+    {
+        "id": 42,
+        "name": "golbat",
+        "type": [
+            "poison",
+            "flying"
+        ],
+        "base_price": 75
+    },
+    {
+        "id": 43,
+        "name": "oddish",
+        "type": [
+            "grass",
+            "poison"
+        ],
+        "base_price": 45
+    },
+    {
+        "id": 44,
+        "name": "gloom",
+        "type": [
+            "grass",
+            "poison"
+        ],
+        "base_price": 60
+    },
+    {
+        "id": 45,
+        "name": "vileplume",
+        "type": [
+            "grass",
+            "poison"
+        ],
+        "base_price": 75
+    },
+    {
+        "id": 46,
+        "name": "paras",
+        "type": [
+            "bug",
+            "grass"
+        ],
+        "base_price": 35
+    },
+    {
+        "id": 47,
+        "name": "parasect",
+        "type": [
+            "bug",
+            "grass"
+        ],
+        "base_price": 60
+    },
+    {
+        "id": 48,
+        "name": "venonat",
+        "type": [
+            "bug",
+            "poison"
+        ],
+        "base_price": 60
+    },
+    {
+        "id": 49,
+        "name": "venomoth",
+        "type": [
+            "bug",
+            "poison"
+        ],
+        "base_price": 70
+    },
+    {
+        "id": 50,
+        "name": "diglett",
+        "type": [
+            "ground"
+        ],
+        "base_price": 10
+    },
+    {
+        "id": 51,
+        "name": "dugtrio",
+        "type": [
+            "ground"
+        ],
+        "base_price": 35
+    },
+    {
+        "id": 52,
+        "name": "meowth",
+        "type": [
+            "normal"
+        ],
+        "base_price": 40
+    },
+    {
+        "id": 53,
+        "name": "persian",
+        "type": [
+            "normal"
+        ],
+        "base_price": 65
+    },
+    {
+        "id": 54,
+        "name": "psyduck",
+        "type": [
+            "water"
+        ],
+        "base_price": 50
+    },
+    {
+        "id": 55,
+        "name": "golduck",
+        "type": [
+            "water"
+        ],
+        "base_price": 80
+    },
+    {
+        "id": 56,
+        "name": "mankey",
+        "type": [
+            "fighting"
+        ],
+        "base_price": 40
+    },
+    {
+        "id": 57,
+        "name": "primeape",
+        "type": [
+            "fighting"
+        ],
+        "base_price": 65
+    },
+    {
+        "id": 58,
+        "name": "growlithe",
+        "type": [
+            "fire"
+        ],
+        "base_price": 55
+    },
+    {
+        "id": 59,
+        "name": "arcanine",
+        "type": [
+            "fire"
+        ],
+        "base_price": 90
+    },
+    {
+        "id": 60,
+        "name": "poliwag",
+        "type": [
+            "water"
+        ],
+        "base_price": 40
+    },
+    {
+        "id": 61,
+        "name": "poliwhirl",
+        "type": [
+            "water"
+        ],
+        "base_price": 65
+    },
+    {
+        "id": 62,
+        "name": "poliwrath",
+        "type": [
+            "water",
+            "fighting"
+        ],
+        "base_price": 90
+    },
+    {
+        "id": 63,
+        "name": "abra",
+        "type": [
+            "psychic"
+        ],
+        "base_price": 25
+    },
+    {
+        "id": 64,
+        "name": "kadabra",
+        "type": [
+            "psychic"
+        ],
+        "base_price": 40
+    },
+    {
+        "id": 65,
+        "name": "alakazam",
+        "type": [
+            "psychic"
+        ],
+        "base_price": 55
+    },
+    {
+        "id": 66,
+        "name": "machop",
+        "type": [
+            "fighting"
+        ],
+        "base_price": 70
+    },
+    {
+        "id": 67,
+        "name": "machoke",
+        "type": [
+            "fighting"
+        ],
+        "base_price": 80
+    },
+    {
+        "id": 68,
+        "name": "machamp",
+        "type": [
+            "fighting"
+        ],
+        "base_price": 90
+    },
+    {
+        "id": 69,
+        "name": "bellsprout",
+        "type": [
+            "grass",
+            "poison"
+        ],
+        "base_price": 50
+    },
+    {
+        "id": 70,
+        "name": "weepinbell",
+        "type": [
+            "grass",
+            "poison"
+        ],
+        "base_price": 65
+    },
+    {
+        "id": 71,
+        "name": "victreebel",
+        "type": [
+            "grass",
+            "poison"
+        ],
+        "base_price": 80
+    },
+    {
+        "id": 72,
+        "name": "tentacool",
+        "type": [
+            "water",
+            "poison"
+        ],
+        "base_price": 40
+    },
+    {
+        "id": 73,
+        "name": "tentacruel",
+        "type": [
+            "water",
+            "poison"
+        ],
+        "base_price": 80
+    },
+    {
+        "id": 74,
+        "name": "geodude",
+        "type": [
+            "rock",
+            "ground"
+        ],
+        "base_price": 40
+    },
+    {
+        "id": 75,
+        "name": "graveler",
+        "type": [
+            "rock",
+            "ground"
+        ],
+        "base_price": 55
+    },
+    {
+        "id": 76,
+        "name": "golem",
+        "type": [
+            "rock",
+            "ground"
+        ],
+        "base_price": 80
+    },
+    {
+        "id": 77,
+        "name": "ponyta",
+        "type": [
+            "fire"
+        ],
+        "base_price": 50
+    },
+    {
+        "id": 78,
+        "name": "rapidash",
+        "type": [
+            "fire"
+        ],
+        "base_price": 65
+    },
+    {
+        "id": 79,
+        "name": "slowpoke",
+        "type": [
+            "water",
+            "psychic"
+        ],
+        "base_price": 90
+    },
+    {
+        "id": 80,
+        "name": "slowbro",
+        "type": [
+            "water",
+            "psychic"
+        ],
+        "base_price": 95
+    },
+    {
+        "id": 81,
+        "name": "magnemite",
+        "type": [
+            "electric",
+            "steel"
+        ],
+        "base_price": 25
+    },
+    {
+        "id": 82,
+        "name": "magneton",
+        "type": [
+            "electric",
+            "steel"
+        ],
+        "base_price": 50
+    },
+    {
+        "id": 83,
+        "name": "farfetchd",
+        "type": [
+            "normal",
+            "flying"
+        ],
+        "base_price": 52
+    },
+    {
+        "id": 84,
+        "name": "doduo",
+        "type": [
+            "normal",
+            "flying"
+        ],
+        "base_price": 35
+    },
+    {
+        "id": 85,
+        "name": "dodrio",
+        "type": [
+            "normal",
+            "flying"
+        ],
+        "base_price": 60
+    },
+    {
+        "id": 86,
+        "name": "seel",
+        "type": [
+            "water"
+        ],
+        "base_price": 65
+    },
+    {
+        "id": 87,
+        "name": "dewgong",
+        "type": [
+            "water",
+            "ice"
+        ],
+        "base_price": 90
+    },
+    {
+        "id": 88,
+        "name": "grimer",
+        "type": [
+            "poison"
+        ],
+        "base_price": 80
+    },
+    {
+        "id": 89,
+        "name": "muk",
+        "type": [
+            "poison"
+        ],
+        "base_price": 105
+    },
+    {
+        "id": 90,
+        "name": "shellder",
+        "type": [
+            "water"
+        ],
+        "base_price": 30
+    },
+    {
+        "id": 91,
+        "name": "cloyster",
+        "type": [
+            "water",
+            "ice"
+        ],
+        "base_price": 50
+    },
+    {
+        "id": 92,
+        "name": "gastly",
+        "type": [
+            "ghost",
+            "poison"
+        ],
+        "base_price": 30
+    },
+    {
+        "id": 93,
+        "name": "haunter",
+        "type": [
+            "ghost",
+            "poison"
+        ],
+        "base_price": 45
+    },
+    {
+        "id": 94,
+        "name": "gengar",
+        "type": [
+            "ghost",
+            "poison"
+        ],
+        "base_price": 60
+    },
+    {
+        "id": 95,
+        "name": "onix",
+        "type": [
+            "rock",
+            "ground"
+        ],
+        "base_price": 35
+    },
+    {
+        "id": 96,
+        "name": "drowzee",
+        "type": [
+            "psychic"
+        ],
+        "base_price": 60
+    },
+    {
+        "id": 97,
+        "name": "hypno",
+        "type": [
+            "psychic"
+        ],
+        "base_price": 85
+    },
+    {
+        "id": 98,
+        "name": "krabby",
+        "type": [
+            "water"
+        ],
+        "base_price": 30
+    },
+    {
+        "id": 99,
+        "name": "kingler",
+        "type": [
+            "water"
+        ],
+        "base_price": 55
+    },
+    {
+        "id": 100,
+        "name": "voltorb",
+        "type": [
+            "electric"
+        ],
+        "base_price": 40
+    },
+    {
+        "id": 101,
+        "name": "electrode",
+        "type": [
+            "electric"
+        ],
+        "base_price": 60
+    },
+    {
+        "id": 102,
+        "name": "exeggcute",
+        "type": [
+            "grass",
+            "psychic"
+        ],
+        "base_price": 60
+    },
+    {
+        "id": 103,
+        "name": "exeggutor",
+        "type": [
+            "grass",
+            "psychic"
+        ],
+        "base_price": 95
+    },
+    {
+        "id": 104,
+        "name": "cubone",
+        "type": [
+            "ground"
+        ],
+        "base_price": 50
+    },
+    {
+        "id": 105,
+        "name": "marowak",
+        "type": [
+            "ground"
+        ],
+        "base_price": 60
+    },
+    {
+        "id": 106,
+        "name": "hitmonlee",
+        "type": [
+            "fighting"
+        ],
+        "base_price": 50
+    },
+    {
+        "id": 107,
+        "name": "hitmonchan",
+        "type": [
+            "fighting"
+        ],
+        "base_price": 50
+    },
+    {
+        "id": 108,
+        "name": "lickitung",
+        "type": [
+            "normal"
+        ],
+        "base_price": 90
+    },
+    {
+        "id": 109,
+        "name": "koffing",
+        "type": [
+            "poison"
+        ],
+        "base_price": 40
+    },
+    {
+        "id": 110,
+        "name": "weezing",
+        "type": [
+            "poison"
+        ],
+        "base_price": 65
+    },
+    {
+        "id": 111,
+        "name": "rhyhorn",
+        "type": [
+            "ground",
+            "rock"
+        ],
+        "base_price": 80
+    },
+    {
+        "id": 112,
+        "name": "rhydon",
+        "type": [
+            "ground",
+            "rock"
+        ],
+        "base_price": 105
+    },
+    {
+        "id": 113,
+        "name": "chansey",
+        "type": [
+            "normal"
+        ],
+        "base_price": 250
+    },
+    {
+        "id": 114,
+        "name": "tangela",
+        "type": [
+            "grass"
+        ],
+        "base_price": 65
+    },
+    {
+        "id": 115,
+        "name": "kangaskhan",
+        "type": [
+            "normal"
+        ],
+        "base_price": 105
+    },
+    {
+        "id": 116,
+        "name": "horsea",
+        "type": [
+            "water"
+        ],
+        "base_price": 30
+    },
+    {
+        "id": 117,
+        "name": "seadra",
+        "type": [
+            "water"
+        ],
+        "base_price": 55
+    },
+    {
+        "id": 118,
+        "name": "goldeen",
+        "type": [
+            "water"
+        ],
+        "base_price": 45
+    },
+    {
+        "id": 119,
+        "name": "seaking",
+        "type": [
+            "water"
+        ],
+        "base_price": 80
+    },
+    {
+        "id": 120,
+        "name": "staryu",
+        "type": [
+            "water"
+        ],
+        "base_price": 30
+    },
+    {
+        "id": 121,
+        "name": "starmie",
+        "type": [
+            "water",
+            "psychic"
+        ],
+        "base_price": 60
+    },
+    {
+        "id": 122,
+        "name": "mr-mime",
+        "type": [
+            "psychic",
+            "fairy"
+        ],
+        "base_price": 40
+    },
+    {
+        "id": 123,
+        "name": "scyther",
+        "type": [
+            "bug",
+            "flying"
+        ],
+        "base_price": 70
+    },
+    {
+        "id": 124,
+        "name": "jynx",
+        "type": [
+            "ice",
+            "psychic"
+        ],
+        "base_price": 65
+    },
+    {
+        "id": 125,
+        "name": "electabuzz",
+        "type": [
+            "electric"
+        ],
+        "base_price": 65
+    },
+    {
+        "id": 126,
+        "name": "magmar",
+        "type": [
+            "fire"
+        ],
+        "base_price": 65
+    },
+    {
+        "id": 127,
+        "name": "pinsir",
+        "type": [
+            "bug"
+        ],
+        "base_price": 65
+    },
+    {
+        "id": 128,
+        "name": "tauros",
+        "type": [
+            "normal"
+        ],
+        "base_price": 75
+    },
+    {
+        "id": 129,
+        "name": "magikarp",
+        "type": [
+            "water"
+        ],
+        "base_price": 20
+    },
+    {
+        "id": 130,
+        "name": "gyarados",
+        "type": [
+            "water",
+            "flying"
+        ],
+        "base_price": 95
+    },
+    {
+        "id": 131,
+        "name": "lapras",
+        "type": [
+            "water",
+            "ice"
+        ],
+        "base_price": 130
+    },
+    {
+        "id": 132,
+        "name": "ditto",
+        "type": [
+            "normal"
+        ],
+        "base_price": 48
+    },
+    {
+        "id": 133,
+        "name": "eevee",
+        "type": [
+            "normal"
+        ],
+        "base_price": 55
+    },
+    {
+        "id": 134,
+        "name": "vaporeon",
+        "type": [
+            "water"
+        ],
+        "base_price": 130
+    },
+    {
+        "id": 135,
+        "name": "jolteon",
+        "type": [
+            "electric"
+        ],
+        "base_price": 65
+    },
+    {
+        "id": 136,
+        "name": "flareon",
+        "type": [
+            "fire"
+        ],
+        "base_price": 65
+    },
+    {
+        "id": 137,
+        "name": "porygon",
+        "type": [
+            "normal"
+        ],
+        "base_price": 65
+    },
+    {
+        "id": 138,
+        "name": "omanyte",
+        "type": [
+            "rock",
+            "water"
+        ],
+        "base_price": 35
+    },
+    {
+        "id": 139,
+        "name": "omastar",
+        "type": [
+            "rock",
+            "water"
+        ],
+        "base_price": 70
+    },
+    {
+        "id": 140,
+        "name": "kabuto",
+        "type": [
+            "rock",
+            "water"
+        ],
+        "base_price": 30
+    },
+    {
+        "id": 141,
+        "name": "kabutops",
+        "type": [
+            "rock",
+            "water"
+        ],
+        "base_price": 60
+    },
+    {
+        "id": 142,
+        "name": "aerodactyl",
+        "type": [
+            "rock",
+            "flying"
+        ],
+        "base_price": 80
+    },
+    {
+        "id": 143,
+        "name": "snorlax",
+        "type": [
+            "normal"
+        ],
+        "base_price": 160
+    },
+    {
+        "id": 144,
+        "name": "articuno",
+        "type": [
+            "ice",
+            "flying"
+        ],
+        "base_price": 90
+    },
+    {
+        "id": 145,
+        "name": "zapdos",
+        "type": [
+            "electric",
+            "flying"
+        ],
+        "base_price": 90
+    },
+    {
+        "id": 146,
+        "name": "moltres",
+        "type": [
+            "fire",
+            "flying"
+        ],
+        "base_price": 90
+    },
+    {
+        "id": 147,
+        "name": "dratini",
+        "type": [
+            "dragon"
+        ],
+        "base_price": 41
+    },
+    {
+        "id": 148,
+        "name": "dragonair",
+        "type": [
+            "dragon"
+        ],
+        "base_price": 61
+    },
+    {
+        "id": 149,
+        "name": "dragonite",
+        "type": [
+            "dragon",
+            "flying"
+        ],
+        "base_price": 91
+    },
+    {
+        "id": 150,
+        "name": "mewtwo",
+        "type": [
+            "psychic"
+        ],
+        "base_price": 106
+    },
+    {
+        "id": 151,
+        "name": "mew",
+        "type": [
+            "psychic"
+        ],
+        "base_price": 100
+    },
+    {
+        "id": 152,
+        "name": "chikorita",
+        "type": [
+            "grass"
+        ],
+        "base_price": 45
+    },
+    {
+        "id": 153,
+        "name": "bayleef",
+        "type": [
+            "grass"
+        ],
+        "base_price": 60
+    },
+    {
+        "id": 154,
+        "name": "meganium",
+        "type": [
+            "grass"
+        ],
+        "base_price": 80
+    },
+    {
+        "id": 155,
+        "name": "cyndaquil",
+        "type": [
+            "fire"
+        ],
+        "base_price": 39
+    },
+    {
+        "id": 156,
+        "name": "quilava",
+        "type": [
+            "fire"
+        ],
+        "base_price": 58
+    },
+    {
+        "id": 157,
+        "name": "typhlosion",
+        "type": [
+            "fire"
+        ],
+        "base_price": 78
+    },
+    {
+        "id": 158,
+        "name": "totodile",
+        "type": [
+            "water"
+        ],
+        "base_price": 50
+    },
+    {
+        "id": 159,
+        "name": "croconaw",
+        "type": [
+            "water"
+        ],
+        "base_price": 65
+    },
+    {
+        "id": 160,
+        "name": "feraligatr",
+        "type": [
+            "water"
+        ],
+        "base_price": 85
+    },
+    {
+        "id": 161,
+        "name": "sentret",
+        "type": [
+            "normal"
+        ],
+        "base_price": 35
+    },
+    {
+        "id": 162,
+        "name": "furret",
+        "type": [
+            "normal"
+        ],
+        "base_price": 85
+    },
+    {
+        "id": 163,
+        "name": "hoothoot",
+        "type": [
+            "normal",
+            "flying"
+        ],
+        "base_price": 60
+    },
+    {
+        "id": 164,
+        "name": "noctowl",
+        "type": [
+            "normal",
+            "flying"
+        ],
+        "base_price": 100
+    },
+    {
+        "id": 165,
+        "name": "ledyba",
+        "type": [
+            "bug",
+            "flying"
+        ],
+        "base_price": 40
+    },
+    {
+        "id": 166,
+        "name": "ledian",
+        "type": [
+            "bug",
+            "flying"
+        ],
+        "base_price": 55
+    },
+    {
+        "id": 167,
+        "name": "spinarak",
+        "type": [
+            "bug",
+            "poison"
+        ],
+        "base_price": 40
+    },
+    {
+        "id": 168,
+        "name": "ariados",
+        "type": [
+            "bug",
+            "poison"
+        ],
+        "base_price": 70
+    },
+    {
+        "id": 169,
+        "name": "crobat",
+        "type": [
+            "poison",
+            "flying"
+        ],
+        "base_price": 85
+    },
+    {
+        "id": 170,
+        "name": "chinchou",
+        "type": [
+            "water",
+            "electric"
+        ],
+        "base_price": 75
+    },
+    {
+        "id": 171,
+        "name": "lanturn",
+        "type": [
+            "water",
+            "electric"
+        ],
+        "base_price": 125
+    },
+    {
+        "id": 172,
+        "name": "pichu",
+        "type": [
+            "electric"
+        ],
+        "base_price": 20
+    },
+    {
+        "id": 173,
+        "name": "cleffa",
+        "type": [
+            "fairy"
+        ],
+        "base_price": 50
+    },
+    {
+        "id": 174,
+        "name": "igglybuff",
+        "type": [
+            "normal",
+            "fairy"
+        ],
+        "base_price": 90
+    },
+    {
+        "id": 175,
+        "name": "togepi",
+        "type": [
+            "fairy"
+        ],
+        "base_price": 35
+    },
+    {
+        "id": 176,
+        "name": "togetic",
+        "type": [
+            "fairy",
+            "flying"
+        ],
+        "base_price": 55
+    },
+    {
+        "id": 177,
+        "name": "natu",
+        "type": [
+            "psychic",
+            "flying"
+        ],
+        "base_price": 40
+    },
+    {
+        "id": 178,
+        "name": "xatu",
+        "type": [
+            "psychic",
+            "flying"
+        ],
+        "base_price": 65
+    },
+    {
+        "id": 179,
+        "name": "mareep",
+        "type": [
+            "electric"
+        ],
+        "base_price": 55
+    },
+    {
+        "id": 180,
+        "name": "flaaffy",
+        "type": [
+            "electric"
+        ],
+        "base_price": 70
+    },
+    {
+        "id": 181,
+        "name": "ampharos",
+        "type": [
+            "electric"
+        ],
+        "base_price": 90
+    },
+    {
+        "id": 182,
+        "name": "bellossom",
+        "type": [
+            "grass"
+        ],
+        "base_price": 75
+    },
+    {
+        "id": 183,
+        "name": "marill",
+        "type": [
+            "water",
+            "fairy"
+        ],
+        "base_price": 70
+    },
+    {
+        "id": 184,
+        "name": "azumarill",
+        "type": [
+            "water",
+            "fairy"
+        ],
+        "base_price": 100
+    },
+    {
+        "id": 185,
+        "name": "sudowoodo",
+        "type": [
+            "rock"
+        ],
+        "base_price": 70
+    },
+    {
+        "id": 186,
+        "name": "politoed",
+        "type": [
+            "water"
+        ],
+        "base_price": 90
+    },
+    {
+        "id": 187,
+        "name": "hoppip",
+        "type": [
+            "grass",
+            "flying"
+        ],
+        "base_price": 35
+    },
+    {
+        "id": 188,
+        "name": "skiploom",
+        "type": [
+            "grass",
+            "flying"
+        ],
+        "base_price": 55
+    },
+    {
+        "id": 189,
+        "name": "jumpluff",
+        "type": [
+            "grass",
+            "flying"
+        ],
+        "base_price": 75
+    },
+    {
+        "id": 190,
+        "name": "aipom",
+        "type": [
+            "normal"
+        ],
+        "base_price": 55
+    },
+    {
+        "id": 191,
+        "name": "sunkern",
+        "type": [
+            "grass"
+        ],
+        "base_price": 30
+    },
+    {
+        "id": 192,
+        "name": "sunflora",
+        "type": [
+            "grass"
+        ],
+        "base_price": 75
+    },
+    {
+        "id": 193,
+        "name": "yanma",
+        "type": [
+            "bug",
+            "flying"
+        ],
+        "base_price": 65
+    },
+    {
+        "id": 194,
+        "name": "wooper",
+        "type": [
+            "water",
+            "ground"
+        ],
+        "base_price": 55
+    },
+    {
+        "id": 195,
+        "name": "quagsire",
+        "type": [
+            "water",
+            "ground"
+        ],
+        "base_price": 95
+    },
+    {
+        "id": 196,
+        "name": "espeon",
+        "type": [
+            "psychic"
+        ],
+        "base_price": 65
+    },
+    {
+        "id": 197,
+        "name": "umbreon",
+        "type": [
+            "dark"
+        ],
+        "base_price": 95
+    },
+    {
+        "id": 198,
+        "name": "murkrow",
+        "type": [
+            "dark",
+            "flying"
+        ],
+        "base_price": 60
+    },
+    {
+        "id": 199,
+        "name": "slowking",
+        "type": [
+            "water",
+            "psychic"
+        ],
+        "base_price": 95
+    },
+    {
+        "id": 200,
+        "name": "misdreavus",
+        "type": [
+            "ghost"
+        ],
+        "base_price": 60
+    },
+    {
+        "id": 201,
+        "name": "unown",
+        "type": [
+            "psychic"
+        ],
+        "base_price": 48
+    },
+    {
+        "id": 202,
+        "name": "wobbuffet",
+        "type": [
+            "psychic"
+        ],
+        "base_price": 190
+    },
+    {
+        "id": 203,
+        "name": "girafarig",
+        "type": [
+            "normal",
+            "psychic"
+        ],
+        "base_price": 70
+    },
+    {
+        "id": 204,
+        "name": "pineco",
+        "type": [
+            "bug"
+        ],
+        "base_price": 50
+    },
+    {
+        "id": 205,
+        "name": "forretress",
+        "type": [
+            "bug",
+            "steel"
+        ],
+        "base_price": 75
+    },
+    {
+        "id": 206,
+        "name": "dunsparce",
+        "type": [
+            "normal"
+        ],
+        "base_price": 100
+    },
+    {
+        "id": 207,
+        "name": "gligar",
+        "type": [
+            "ground",
+            "flying"
+        ],
+        "base_price": 65
+    },
+    {
+        "id": 208,
+        "name": "steelix",
+        "type": [
+            "steel",
+            "ground"
+        ],
+        "base_price": 75
+    },
+    {
+        "id": 209,
+        "name": "snubbull",
+        "type": [
+            "fairy"
+        ],
+        "base_price": 60
+    },
+    {
+        "id": 210,
+        "name": "granbull",
+        "type": [
+            "fairy"
+        ],
+        "base_price": 90
+    },
+    {
+        "id": 211,
+        "name": "qwilfish",
+        "type": [
+            "water",
+            "poison"
+        ],
+        "base_price": 65
+    },
+    {
+        "id": 212,
+        "name": "scizor",
+        "type": [
+            "bug",
+            "steel"
+        ],
+        "base_price": 70
+    },
+    {
+        "id": 213,
+        "name": "shuckle",
+        "type": [
+            "bug",
+            "rock"
+        ],
+        "base_price": 20
+    },
+    {
+        "id": 214,
+        "name": "heracross",
+        "type": [
+            "bug",
+            "fighting"
+        ],
+        "base_price": 80
+    },
+    {
+        "id": 215,
+        "name": "sneasel",
+        "type": [
+            "dark",
+            "ice"
+        ],
+        "base_price": 55
+    },
+    {
+        "id": 216,
+        "name": "teddiursa",
+        "type": [
+            "normal"
+        ],
+        "base_price": 60
+    },
+    {
+        "id": 217,
+        "name": "ursaring",
+        "type": [
+            "normal"
+        ],
+        "base_price": 90
+    },
+    {
+        "id": 218,
+        "name": "slugma",
+        "type": [
+            "fire"
+        ],
+        "base_price": 40
+    },
+    {
+        "id": 219,
+        "name": "magcargo",
+        "type": [
+            "fire",
+            "rock"
+        ],
+        "base_price": 60
+    },
+    {
+        "id": 220,
+        "name": "swinub",
+        "type": [
+            "ice",
+            "ground"
+        ],
+        "base_price": 50
+    },
+    {
+        "id": 221,
+        "name": "piloswine",
+        "type": [
+            "ice",
+            "ground"
+        ],
+        "base_price": 100
+    },
+    {
+        "id": 222,
+        "name": "corsola",
+        "type": [
+            "water",
+            "rock"
+        ],
+        "base_price": 65
+    },
+    {
+        "id": 223,
+        "name": "remoraid",
+        "type": [
+            "water"
+        ],
+        "base_price": 35
+    },
+    {
+        "id": 224,
+        "name": "octillery",
+        "type": [
+            "water"
+        ],
+        "base_price": 75
+    },
+    {
+        "id": 225,
+        "name": "delibird",
+        "type": [
+            "ice",
+            "flying"
+        ],
+        "base_price": 45
+    },
+    {
+        "id": 226,
+        "name": "mantine",
+        "type": [
+            "water",
+            "flying"
+        ],
+        "base_price": 85
+    },
+    {
+        "id": 227,
+        "name": "skarmory",
+        "type": [
+            "steel",
+            "flying"
+        ],
+        "base_price": 65
+    },
+    {
+        "id": 228,
+        "name": "houndour",
+        "type": [
+            "dark",
+            "fire"
+        ],
+        "base_price": 45
+    },
+    {
+        "id": 229,
+        "name": "houndoom",
+        "type": [
+            "dark",
+            "fire"
+        ],
+        "base_price": 75
+    },
+    {
+        "id": 230,
+        "name": "kingdra",
+        "type": [
+            "water",
+            "dragon"
+        ],
+        "base_price": 75
+    },
+    {
+        "id": 231,
+        "name": "phanpy",
+        "type": [
+            "ground"
+        ],
+        "base_price": 90
+    },
+    {
+        "id": 232,
+        "name": "donphan",
+        "type": [
+            "ground"
+        ],
+        "base_price": 90
+    },
+    {
+        "id": 233,
+        "name": "porygon2",
+        "type": [
+            "normal"
+        ],
+        "base_price": 85
+    },
+    {
+        "id": 234,
+        "name": "stantler",
+        "type": [
+            "normal"
+        ],
+        "base_price": 73
+    },
+    {
+        "id": 235,
+        "name": "smeargle",
+        "type": [
+            "normal"
+        ],
+        "base_price": 55
+    },
+    {
+        "id": 236,
+        "name": "tyrogue",
+        "type": [
+            "fighting"
+        ],
+        "base_price": 35
+    },
+    {
+        "id": 237,
+        "name": "hitmontop",
+        "type": [
+            "fighting"
+        ],
+        "base_price": 50
+    },
+    {
+        "id": 238,
+        "name": "smoochum",
+        "type": [
+            "ice",
+            "psychic"
+        ],
+        "base_price": 45
+    },
+    {
+        "id": 239,
+        "name": "elekid",
+        "type": [
+            "electric"
+        ],
+        "base_price": 45
+    },
+    {
+        "id": 240,
+        "name": "magby",
+        "type": [
+            "fire"
+        ],
+        "base_price": 45
+    },
+    {
+        "id": 241,
+        "name": "miltank",
+        "type": [
+            "normal"
+        ],
+        "base_price": 95
+    },
+    {
+        "id": 242,
+        "name": "blissey",
+        "type": [
+            "normal"
+        ],
+        "base_price": 255
+    },
+    {
+        "id": 243,
+        "name": "raikou",
+        "type": [
+            "electric"
+        ],
+        "base_price": 90
+    },
+    {
+        "id": 244,
+        "name": "entei",
+        "type": [
+            "fire"
+        ],
+        "base_price": 115
+    },
+    {
+        "id": 245,
+        "name": "suicune",
+        "type": [
+            "water"
+        ],
+        "base_price": 100
+    },
+    {
+        "id": 246,
+        "name": "larvitar",
+        "type": [
+            "rock",
+            "ground"
+        ],
+        "base_price": 50
+    },
+    {
+        "id": 247,
+        "name": "pupitar",
+        "type": [
+            "rock",
+            "ground"
+        ],
+        "base_price": 70
+    },
+    {
+        "id": 248,
+        "name": "tyranitar",
+        "type": [
+            "rock",
+            "dark"
+        ],
+        "base_price": 100
+    },
+    {
+        "id": 249,
+        "name": "lugia",
+        "type": [
+            "psychic",
+            "flying"
+        ],
+        "base_price": 106
+    },
+    {
+        "id": 250,
+        "name": "ho-oh",
+        "type": [
+            "fire",
+            "flying"
+        ],
+        "base_price": 106
+    },
+    {
+        "id": 251,
+        "name": "celebi",
+        "type": [
+            "psychic",
+            "grass"
+        ],
+        "base_price": 100
+    },
+    {
+        "id": 252,
+        "name": "treecko",
+        "type": [
+            "grass"
+        ],
+        "base_price": 40
+    },
+    {
+        "id": 253,
+        "name": "grovyle",
+        "type": [
+            "grass"
+        ],
+        "base_price": 50
+    },
+    {
+        "id": 254,
+        "name": "sceptile",
+        "type": [
+            "grass"
+        ],
+        "base_price": 70
+    },
+    {
+        "id": 255,
+        "name": "torchic",
+        "type": [
+            "fire"
+        ],
+        "base_price": 45
+    },
+    {
+        "id": 256,
+        "name": "combusken",
+        "type": [
+            "fire",
+            "fighting"
+        ],
+        "base_price": 60
+    },
+    {
+        "id": 257,
+        "name": "blaziken",
+        "type": [
+            "fire",
+            "fighting"
+        ],
+        "base_price": 80
+    },
+    {
+        "id": 258,
+        "name": "mudkip",
+        "type": [
+            "water"
+        ],
+        "base_price": 50
+    },
+    {
+        "id": 259,
+        "name": "marshtomp",
+        "type": [
+            "water",
+            "ground"
+        ],
+        "base_price": 70
+    },
+    {
+        "id": 260,
+        "name": "swampert",
+        "type": [
+            "water",
+            "ground"
+        ],
+        "base_price": 100
+    },
+    {
+        "id": 261,
+        "name": "poochyena",
+        "type": [
+            "dark"
+        ],
+        "base_price": 35
+    },
+    {
+        "id": 262,
+        "name": "mightyena",
+        "type": [
+            "dark"
+        ],
+        "base_price": 70
+    },
+    {
+        "id": 263,
+        "name": "zigzagoon",
+        "type": [
+            "normal"
+        ],
+        "base_price": 38
+    },
+    {
+        "id": 264,
+        "name": "linoone",
+        "type": [
+            "normal"
+        ],
+        "base_price": 78
+    },
+    {
+        "id": 265,
+        "name": "wurmple",
+        "type": [
+            "bug"
+        ],
+        "base_price": 45
+    },
+    {
+        "id": 266,
+        "name": "silcoon",
+        "type": [
+            "bug"
+        ],
+        "base_price": 50
+    },
+    {
+        "id": 267,
+        "name": "beautifly",
+        "type": [
+            "bug",
+            "flying"
+        ],
+        "base_price": 60
+    },
+    {
+        "id": 268,
+        "name": "cascoon",
+        "type": [
+            "bug"
+        ],
+        "base_price": 50
+    },
+    {
+        "id": 269,
+        "name": "dustox",
+        "type": [
+            "bug",
+            "poison"
+        ],
+        "base_price": 60
+    },
+    {
+        "id": 270,
+        "name": "lotad",
+        "type": [
+            "water",
+            "grass"
+        ],
+        "base_price": 40
+    },
+    {
+        "id": 271,
+        "name": "lombre",
+        "type": [
+            "water",
+            "grass"
+        ],
+        "base_price": 60
+    },
+    {
+        "id": 272,
+        "name": "ludicolo",
+        "type": [
+            "water",
+            "grass"
+        ],
+        "base_price": 80
+    },
+    {
+        "id": 273,
+        "name": "seedot",
+        "type": [
+            "grass"
+        ],
+        "base_price": 40
+    },
+    {
+        "id": 274,
+        "name": "nuzleaf",
+        "type": [
+            "grass",
+            "dark"
+        ],
+        "base_price": 70
+    },
+    {
+        "id": 275,
+        "name": "shiftry",
+        "type": [
+            "grass",
+            "dark"
+        ],
+        "base_price": 90
+    },
+    {
+        "id": 276,
+        "name": "taillow",
+        "type": [
+            "normal",
+            "flying"
+        ],
+        "base_price": 40
+    },
+    {
+        "id": 277,
+        "name": "swellow",
+        "type": [
+            "normal",
+            "flying"
+        ],
+        "base_price": 60
+    },
+    {
+        "id": 278,
+        "name": "wingull",
+        "type": [
+            "water",
+            "flying"
+        ],
+        "base_price": 40
+    },
+    {
+        "id": 279,
+        "name": "pelipper",
+        "type": [
+            "water",
+            "flying"
+        ],
+        "base_price": 60
+    },
+    {
+        "id": 280,
+        "name": "ralts",
+        "type": [
+            "psychic",
+            "fairy"
+        ],
+        "base_price": 28
+    },
+    {
+        "id": 281,
+        "name": "kirlia",
+        "type": [
+            "psychic",
+            "fairy"
+        ],
+        "base_price": 38
+    },
+    {
+        "id": 282,
+        "name": "gardevoir",
+        "type": [
+            "psychic",
+            "fairy"
+        ],
+        "base_price": 68
+    },
+    {
+        "id": 283,
+        "name": "surskit",
+        "type": [
+            "bug",
+            "water"
+        ],
+        "base_price": 40
+    },
+    {
+        "id": 284,
+        "name": "masquerain",
+        "type": [
+            "bug",
+            "flying"
+        ],
+        "base_price": 70
+    },
+    {
+        "id": 285,
+        "name": "shroomish",
+        "type": [
+            "grass"
+        ],
+        "base_price": 60
+    },
+    {
+        "id": 286,
+        "name": "breloom",
+        "type": [
+            "grass",
+            "fighting"
+        ],
+        "base_price": 60
+    },
+    {
+        "id": 287,
+        "name": "slakoth",
+        "type": [
+            "normal"
+        ],
+        "base_price": 60
+    },
+    {
+        "id": 288,
+        "name": "vigoroth",
+        "type": [
+            "normal"
+        ],
+        "base_price": 80
+    },
+    {
+        "id": 289,
+        "name": "slaking",
+        "type": [
+            "normal"
+        ],
+        "base_price": 150
+    },
+    {
+        "id": 290,
+        "name": "nincada",
+        "type": [
+            "bug",
+            "ground"
+        ],
+        "base_price": 31
+    },
+    {
+        "id": 291,
+        "name": "ninjask",
+        "type": [
+            "bug",
+            "flying"
+        ],
+        "base_price": 61
+    },
+    {
+        "id": 292,
+        "name": "shedinja",
+        "type": [
+            "bug",
+            "ghost"
+        ],
+        "base_price": 1
+    },
+    {
+        "id": 293,
+        "name": "whismur",
+        "type": [
+            "normal"
+        ],
+        "base_price": 64
+    },
+    {
+        "id": 294,
+        "name": "loudred",
+        "type": [
+            "normal"
+        ],
+        "base_price": 84
+    },
+    {
+        "id": 295,
+        "name": "exploud",
+        "type": [
+            "normal"
+        ],
+        "base_price": 104
+    },
+    {
+        "id": 296,
+        "name": "makuhita",
+        "type": [
+            "fighting"
+        ],
+        "base_price": 72
+    },
+    {
+        "id": 297,
+        "name": "hariyama",
+        "type": [
+            "fighting"
+        ],
+        "base_price": 144
+    },
+    {
+        "id": 298,
+        "name": "azurill",
+        "type": [
+            "normal",
+            "fairy"
+        ],
+        "base_price": 50
+    },
+    {
+        "id": 299,
+        "name": "nosepass",
+        "type": [
+            "rock"
+        ],
+        "base_price": 30
+    },
+    {
+        "id": 300,
+        "name": "skitty",
+        "type": [
+            "normal"
+        ],
+        "base_price": 50
+    },
+    {
+        "id": 301,
+        "name": "delcatty",
+        "type": [
+            "normal"
+        ],
+        "base_price": 70
+    },
+    {
+        "id": 302,
+        "name": "sableye",
+        "type": [
+            "dark",
+            "ghost"
+        ],
+        "base_price": 50
+    },
+    {
+        "id": 303,
+        "name": "mawile",
+        "type": [
+            "steel",
+            "fairy"
+        ],
+        "base_price": 50
+    },
+    {
+        "id": 304,
+        "name": "aron",
+        "type": [
+            "steel",
+            "rock"
+        ],
+        "base_price": 50
+    },
+    {
+        "id": 305,
+        "name": "lairon",
+        "type": [
+            "steel",
+            "rock"
+        ],
+        "base_price": 60
+    },
+    {
+        "id": 306,
+        "name": "aggron",
+        "type": [
+            "steel",
+            "rock"
+        ],
+        "base_price": 70
+    },
+    {
+        "id": 307,
+        "name": "meditite",
+        "type": [
+            "fighting",
+            "psychic"
+        ],
+        "base_price": 30
+    },
+    {
+        "id": 308,
+        "name": "medicham",
+        "type": [
+            "fighting",
+            "psychic"
+        ],
+        "base_price": 60
+    },
+    {
+        "id": 309,
+        "name": "electrike",
+        "type": [
+            "electric"
+        ],
+        "base_price": 40
+    },
+    {
+        "id": 310,
+        "name": "manectric",
+        "type": [
+            "electric"
+        ],
+        "base_price": 70
+    },
+    {
+        "id": 311,
+        "name": "plusle",
+        "type": [
+            "electric"
+        ],
+        "base_price": 60
+    },
+    {
+        "id": 312,
+        "name": "minun",
+        "type": [
+            "electric"
+        ],
+        "base_price": 60
+    },
+    {
+        "id": 313,
+        "name": "volbeat",
+        "type": [
+            "bug"
+        ],
+        "base_price": 65
+    },
+    {
+        "id": 314,
+        "name": "illumise",
+        "type": [
+            "bug"
+        ],
+        "base_price": 65
+    },
+    {
+        "id": 315,
+        "name": "roselia",
+        "type": [
+            "grass",
+            "poison"
+        ],
+        "base_price": 50
+    },
+    {
+        "id": 316,
+        "name": "gulpin",
+        "type": [
+            "poison"
+        ],
+        "base_price": 70
+    },
+    {
+        "id": 317,
+        "name": "swalot",
+        "type": [
+            "poison"
+        ],
+        "base_price": 100
+    },
+    {
+        "id": 318,
+        "name": "carvanha",
+        "type": [
+            "water",
+            "dark"
+        ],
+        "base_price": 45
+    },
+    {
+        "id": 319,
+        "name": "sharpedo",
+        "type": [
+            "water",
+            "dark"
+        ],
+        "base_price": 70
+    },
+    {
+        "id": 320,
+        "name": "wailmer",
+        "type": [
+            "water"
+        ],
+        "base_price": 130
+    },
+    {
+        "id": 321,
+        "name": "wailord",
+        "type": [
+            "water"
+        ],
+        "base_price": 170
+    },
+    {
+        "id": 322,
+        "name": "numel",
+        "type": [
+            "fire",
+            "ground"
+        ],
+        "base_price": 60
+    },
+    {
+        "id": 323,
+        "name": "camerupt",
+        "type": [
+            "fire",
+            "ground"
+        ],
+        "base_price": 70
+    },
+    {
+        "id": 324,
+        "name": "torkoal",
+        "type": [
+            "fire"
+        ],
+        "base_price": 70
+    },
+    {
+        "id": 325,
+        "name": "spoink",
+        "type": [
+            "psychic"
+        ],
+        "base_price": 60
+    },
+    {
+        "id": 326,
+        "name": "grumpig",
+        "type": [
+            "psychic"
+        ],
+        "base_price": 80
+    },
+    {
+        "id": 327,
+        "name": "spinda",
+        "type": [
+            "normal"
+        ],
+        "base_price": 60
+    },
+    {
+        "id": 328,
+        "name": "trapinch",
+        "type": [
+            "ground"
+        ],
+        "base_price": 45
+    },
+    {
+        "id": 329,
+        "name": "vibrava",
+        "type": [
+            "ground",
+            "dragon"
+        ],
+        "base_price": 50
+    },
+    {
+        "id": 330,
+        "name": "flygon",
+        "type": [
+            "ground",
+            "dragon"
+        ],
+        "base_price": 80
+    },
+    {
+        "id": 331,
+        "name": "cacnea",
+        "type": [
+            "grass"
+        ],
+        "base_price": 50
+    },
+    {
+        "id": 332,
+        "name": "cacturne",
+        "type": [
+            "grass",
+            "dark"
+        ],
+        "base_price": 70
+    },
+    {
+        "id": 333,
+        "name": "swablu",
+        "type": [
+            "normal",
+            "flying"
+        ],
+        "base_price": 45
+    },
+    {
+        "id": 334,
+        "name": "altaria",
+        "type": [
+            "dragon",
+            "flying"
+        ],
+        "base_price": 75
+    },
+    {
+        "id": 335,
+        "name": "zangoose",
+        "type": [
+            "normal"
+        ],
+        "base_price": 73
+    },
+    {
+        "id": 336,
+        "name": "seviper",
+        "type": [
+            "poison"
+        ],
+        "base_price": 73
+    },
+    {
+        "id": 337,
+        "name": "lunatone",
+        "type": [
+            "rock",
+            "psychic"
+        ],
+        "base_price": 90
+    },
+    {
+        "id": 338,
+        "name": "solrock",
+        "type": [
+            "rock",
+            "psychic"
+        ],
+        "base_price": 90
+    },
+    {
+        "id": 339,
+        "name": "barboach",
+        "type": [
+            "water",
+            "ground"
+        ],
+        "base_price": 50
+    },
+    {
+        "id": 340,
+        "name": "whiscash",
+        "type": [
+            "water",
+            "ground"
+        ],
+        "base_price": 110
+    },
+    {
+        "id": 341,
+        "name": "corphish",
+        "type": [
+            "water"
+        ],
+        "base_price": 43
+    },
+    {
+        "id": 342,
+        "name": "crawdaunt",
+        "type": [
+            "water",
+            "dark"
+        ],
+        "base_price": 63
+    },
+    {
+        "id": 343,
+        "name": "baltoy",
+        "type": [
+            "ground",
+            "psychic"
+        ],
+        "base_price": 40
+    },
+    {
+        "id": 344,
+        "name": "claydol",
+        "type": [
+            "ground",
+            "psychic"
+        ],
+        "base_price": 60
+    },
+    {
+        "id": 345,
+        "name": "lileep",
+        "type": [
+            "rock",
+            "grass"
+        ],
+        "base_price": 66
+    },
+    {
+        "id": 346,
+        "name": "cradily",
+        "type": [
+            "rock",
+            "grass"
+        ],
+        "base_price": 86
+    },
+    {
+        "id": 347,
+        "name": "anorith",
+        "type": [
+            "rock",
+            "bug"
+        ],
+        "base_price": 45
+    },
+    {
+        "id": 348,
+        "name": "armaldo",
+        "type": [
+            "rock",
+            "bug"
+        ],
+        "base_price": 75
+    },
+    {
+        "id": 349,
+        "name": "feebas",
+        "type": [
+            "water"
+        ],
+        "base_price": 20
+    },
+    {
+        "id": 350,
+        "name": "milotic",
+        "type": [
+            "water"
+        ],
+        "base_price": 95
+    },
+    {
+        "id": 351,
+        "name": "castform",
+        "type": [
+            "normal"
+        ],
+        "base_price": 70
+    },
+    {
+        "id": 352,
+        "name": "kecleon",
+        "type": [
+            "normal"
+        ],
+        "base_price": 60
+    },
+    {
+        "id": 353,
+        "name": "shuppet",
+        "type": [
+            "ghost"
+        ],
+        "base_price": 44
+    },
+    {
+        "id": 354,
+        "name": "banette",
+        "type": [
+            "ghost"
+        ],
+        "base_price": 64
+    },
+    {
+        "id": 355,
+        "name": "duskull",
+        "type": [
+            "ghost"
+        ],
+        "base_price": 20
+    },
+    {
+        "id": 356,
+        "name": "dusclops",
+        "type": [
+            "ghost"
+        ],
+        "base_price": 40
+    },
+    {
+        "id": 357,
+        "name": "tropius",
+        "type": [
+            "grass",
+            "flying"
+        ],
+        "base_price": 99
+    },
+    {
+        "id": 358,
+        "name": "chimecho",
+        "type": [
+            "psychic"
+        ],
+        "base_price": 75
+    },
+    {
+        "id": 359,
+        "name": "absol",
+        "type": [
+            "dark"
+        ],
+        "base_price": 65
+    },
+    {
+        "id": 360,
+        "name": "wynaut",
+        "type": [
+            "psychic"
+        ],
+        "base_price": 95
+    },
+    {
+        "id": 361,
+        "name": "snorunt",
+        "type": [
+            "ice"
+        ],
+        "base_price": 50
+    },
+    {
+        "id": 362,
+        "name": "glalie",
+        "type": [
+            "ice"
+        ],
+        "base_price": 80
+    },
+    {
+        "id": 363,
+        "name": "spheal",
+        "type": [
+            "ice",
+            "water"
+        ],
+        "base_price": 70
+    },
+    {
+        "id": 364,
+        "name": "sealeo",
+        "type": [
+            "ice",
+            "water"
+        ],
+        "base_price": 90
+    },
+    {
+        "id": 365,
+        "name": "walrein",
+        "type": [
+            "ice",
+            "water"
+        ],
+        "base_price": 110
+    },
+    {
+        "id": 366,
+        "name": "clamperl",
+        "type": [
+            "water"
+        ],
+        "base_price": 35
+    },
+    {
+        "id": 367,
+        "name": "huntail",
+        "type": [
+            "water"
+        ],
+        "base_price": 55
+    },
+    {
+        "id": 368,
+        "name": "gorebyss",
+        "type": [
+            "water"
+        ],
+        "base_price": 55
+    },
+    {
+        "id": 369,
+        "name": "relicanth",
+        "type": [
+            "water",
+            "rock"
+        ],
+        "base_price": 100
+    },
+    {
+        "id": 370,
+        "name": "luvdisc",
+        "type": [
+            "water"
+        ],
+        "base_price": 43
+    },
+    {
+        "id": 371,
+        "name": "bagon",
+        "type": [
+            "dragon"
+        ],
+        "base_price": 45
+    },
+    {
+        "id": 372,
+        "name": "shelgon",
+        "type": [
+            "dragon"
+        ],
+        "base_price": 65
+    },
+    {
+        "id": 373,
+        "name": "salamence",
+        "type": [
+            "dragon",
+            "flying"
+        ],
+        "base_price": 95
+    },
+    {
+        "id": 374,
+        "name": "beldum",
+        "type": [
+            "steel",
+            "psychic"
+        ],
+        "base_price": 40
+    },
+    {
+        "id": 375,
+        "name": "metang",
+        "type": [
+            "steel",
+            "psychic"
+        ],
+        "base_price": 60
+    },
+    {
+        "id": 376,
+        "name": "metagross",
+        "type": [
+            "steel",
+            "psychic"
+        ],
+        "base_price": 80
+    },
+    {
+        "id": 377,
+        "name": "regirock",
+        "type": [
+            "rock"
+        ],
+        "base_price": 80
+    },
+    {
+        "id": 378,
+        "name": "regice",
+        "type": [
+            "ice"
+        ],
+        "base_price": 80
+    },
+    {
+        "id": 379,
+        "name": "registeel",
+        "type": [
+            "steel"
+        ],
+        "base_price": 80
+    },
+    {
+        "id": 380,
+        "name": "latias",
+        "type": [
+            "dragon",
+            "psychic"
+        ],
+        "base_price": 80
+    },
+    {
+        "id": 381,
+        "name": "latios",
+        "type": [
+            "dragon",
+            "psychic"
+        ],
+        "base_price": 80
+    },
+    {
+        "id": 382,
+        "name": "kyogre",
+        "type": [
+            "water"
+        ],
+        "base_price": 100
+    },
+    {
+        "id": 383,
+        "name": "groudon",
+        "type": [
+            "ground"
+        ],
+        "base_price": 100
+    },
+    {
+        "id": 384,
+        "name": "rayquaza",
+        "type": [
+            "dragon",
+            "flying"
+        ],
+        "base_price": 105
+    },
+    {
+        "id": 385,
+        "name": "jirachi",
+        "type": [
+            "steel",
+            "psychic"
+        ],
+        "base_price": 100
+    },
+    {
+        "id": 386,
+        "name": "deoxys-normal",
+        "type": [
+            "psychic"
+        ],
+        "base_price": 50
+    },
+    {
+        "id": 387,
+        "name": "turtwig",
+        "type": [
+            "grass"
+        ],
+        "base_price": 55
+    },
+    {
+        "id": 388,
+        "name": "grotle",
+        "type": [
+            "grass"
+        ],
+        "base_price": 75
+    },
+    {
+        "id": 389,
+        "name": "torterra",
+        "type": [
+            "grass",
+            "ground"
+        ],
+        "base_price": 95
+    },
+    {
+        "id": 390,
+        "name": "chimchar",
+        "type": [
+            "fire"
+        ],
+        "base_price": 44
+    },
+    {
+        "id": 391,
+        "name": "monferno",
+        "type": [
+            "fire",
+            "fighting"
+        ],
+        "base_price": 64
+    },
+    {
+        "id": 392,
+        "name": "infernape",
+        "type": [
+            "fire",
+            "fighting"
+        ],
+        "base_price": 76
+    },
+    {
+        "id": 393,
+        "name": "piplup",
+        "type": [
+            "water"
+        ],
+        "base_price": 53
+    },
+    {
+        "id": 394,
+        "name": "prinplup",
+        "type": [
+            "water"
+        ],
+        "base_price": 64
+    },
+    {
+        "id": 395,
+        "name": "empoleon",
+        "type": [
+            "water",
+            "steel"
+        ],
+        "base_price": 84
+    },
+    {
+        "id": 396,
+        "name": "starly",
+        "type": [
+            "normal",
+            "flying"
+        ],
+        "base_price": 40
+    },
+    {
+        "id": 397,
+        "name": "staravia",
+        "type": [
+            "normal",
+            "flying"
+        ],
+        "base_price": 55
+    },
+    {
+        "id": 398,
+        "name": "staraptor",
+        "type": [
+            "normal",
+            "flying"
+        ],
+        "base_price": 85
+    },
+    {
+        "id": 399,
+        "name": "bidoof",
+        "type": [
+            "normal"
+        ],
+        "base_price": 59
+    },
+    {
+        "id": 400,
+        "name": "bibarel",
+        "type": [
+            "normal",
+            "water"
+        ],
+        "base_price": 79
+    },
+    {
+        "id": 401,
+        "name": "kricketot",
+        "type": [
+            "bug"
+        ],
+        "base_price": 37
+    },
+    {
+        "id": 402,
+        "name": "kricketune",
+        "type": [
+            "bug"
+        ],
+        "base_price": 77
+    },
+    {
+        "id": 403,
+        "name": "shinx",
+        "type": [
+            "electric"
+        ],
+        "base_price": 45
+    },
+    {
+        "id": 404,
+        "name": "luxio",
+        "type": [
+            "electric"
+        ],
+        "base_price": 60
+    },
+    {
+        "id": 405,
+        "name": "luxray",
+        "type": [
+            "electric"
+        ],
+        "base_price": 80
+    },
+    {
+        "id": 406,
+        "name": "budew",
+        "type": [
+            "grass",
+            "poison"
+        ],
+        "base_price": 40
+    },
+    {
+        "id": 407,
+        "name": "roserade",
+        "type": [
+            "grass",
+            "poison"
+        ],
+        "base_price": 60
+    },
+    {
+        "id": 408,
+        "name": "cranidos",
+        "type": [
+            "rock"
+        ],
+        "base_price": 67
+    },
+    {
+        "id": 409,
+        "name": "rampardos",
+        "type": [
+            "rock"
+        ],
+        "base_price": 97
+    },
+    {
+        "id": 410,
+        "name": "shieldon",
+        "type": [
+            "rock",
+            "steel"
+        ],
+        "base_price": 30
+    },
+    {
+        "id": 411,
+        "name": "bastiodon",
+        "type": [
+            "rock",
+            "steel"
+        ],
+        "base_price": 60
+    },
+    {
+        "id": 412,
+        "name": "burmy",
+        "type": [
+            "bug"
+        ],
+        "base_price": 40
+    },
+    {
+        "id": 413,
+        "name": "wormadam-plant",
+        "type": [
+            "bug",
+            "grass"
+        ],
+        "base_price": 60
+    },
+    {
+        "id": 414,
+        "name": "mothim",
+        "type": [
+            "bug",
+            "flying"
+        ],
+        "base_price": 70
+    },
+    {
+        "id": 415,
+        "name": "combee",
+        "type": [
+            "bug",
+            "flying"
+        ],
+        "base_price": 30
+    },
+    {
+        "id": 416,
+        "name": "vespiquen",
+        "type": [
+            "bug",
+            "flying"
+        ],
+        "base_price": 70
+    },
+    {
+        "id": 417,
+        "name": "pachirisu",
+        "type": [
+            "electric"
+        ],
+        "base_price": 60
+    },
+    {
+        "id": 418,
+        "name": "buizel",
+        "type": [
+            "water"
+        ],
+        "base_price": 55
+    },
+    {
+        "id": 419,
+        "name": "floatzel",
+        "type": [
+            "water"
+        ],
+        "base_price": 85
+    },
+    {
+        "id": 420,
+        "name": "cherubi",
+        "type": [
+            "grass"
+        ],
+        "base_price": 45
+    },
+    {
+        "id": 421,
+        "name": "cherrim",
+        "type": [
+            "grass"
+        ],
+        "base_price": 70
+    },
+    {
+        "id": 422,
+        "name": "shellos",
+        "type": [
+            "water"
+        ],
+        "base_price": 76
+    },
+    {
+        "id": 423,
+        "name": "gastrodon",
+        "type": [
+            "water",
+            "ground"
+        ],
+        "base_price": 111
+    },
+    {
+        "id": 424,
+        "name": "ambipom",
+        "type": [
+            "normal"
+        ],
+        "base_price": 75
+    },
+    {
+        "id": 425,
+        "name": "drifloon",
+        "type": [
+            "ghost",
+            "flying"
+        ],
+        "base_price": 90
+    },
+    {
+        "id": 426,
+        "name": "drifblim",
+        "type": [
+            "ghost",
+            "flying"
+        ],
+        "base_price": 150
+    },
+    {
+        "id": 427,
+        "name": "buneary",
+        "type": [
+            "normal"
+        ],
+        "base_price": 55
+    },
+    {
+        "id": 428,
+        "name": "lopunny",
+        "type": [
+            "normal"
+        ],
+        "base_price": 65
+    },
+    {
+        "id": 429,
+        "name": "mismagius",
+        "type": [
+            "ghost"
+        ],
+        "base_price": 60
+    },
+    {
+        "id": 430,
+        "name": "honchkrow",
+        "type": [
+            "dark",
+            "flying"
+        ],
+        "base_price": 100
+    },
+    {
+        "id": 431,
+        "name": "glameow",
+        "type": [
+            "normal"
+        ],
+        "base_price": 49
+    },
+    {
+        "id": 432,
+        "name": "purugly",
+        "type": [
+            "normal"
+        ],
+        "base_price": 71
+    },
+    {
+        "id": 433,
+        "name": "chingling",
+        "type": [
+            "psychic"
+        ],
+        "base_price": 45
+    },
+    {
+        "id": 434,
+        "name": "stunky",
+        "type": [
+            "poison",
+            "dark"
+        ],
+        "base_price": 63
+    },
+    {
+        "id": 435,
+        "name": "skuntank",
+        "type": [
+            "poison",
+            "dark"
+        ],
+        "base_price": 103
+    },
+    {
+        "id": 436,
+        "name": "bronzor",
+        "type": [
+            "steel",
+            "psychic"
+        ],
+        "base_price": 57
+    },
+    {
+        "id": 437,
+        "name": "bronzong",
+        "type": [
+            "steel",
+            "psychic"
+        ],
+        "base_price": 67
+    },
+    {
+        "id": 438,
+        "name": "bonsly",
+        "type": [
+            "rock"
+        ],
+        "base_price": 50
+    },
+    {
+        "id": 439,
+        "name": "mime-jr",
+        "type": [
+            "psychic",
+            "fairy"
+        ],
+        "base_price": 20
+    },
+    {
+        "id": 440,
+        "name": "happiny",
+        "type": [
+            "normal"
+        ],
+        "base_price": 100
+    },
+    {
+        "id": 441,
+        "name": "chatot",
+        "type": [
+            "normal",
+            "flying"
+        ],
+        "base_price": 76
+    },
+    {
+        "id": 442,
+        "name": "spiritomb",
+        "type": [
+            "ghost",
+            "dark"
+        ],
+        "base_price": 50
+    },
+    {
+        "id": 443,
+        "name": "gible",
+        "type": [
+            "dragon",
+            "ground"
+        ],
+        "base_price": 58
+    },
+    {
+        "id": 444,
+        "name": "gabite",
+        "type": [
+            "dragon",
+            "ground"
+        ],
+        "base_price": 68
+    },
+    {
+        "id": 445,
+        "name": "garchomp",
+        "type": [
+            "dragon",
+            "ground"
+        ],
+        "base_price": 108
+    },
+    {
+        "id": 446,
+        "name": "munchlax",
+        "type": [
+            "normal"
+        ],
+        "base_price": 135
+    },
+    {
+        "id": 447,
+        "name": "riolu",
+        "type": [
+            "fighting"
+        ],
+        "base_price": 40
+    },
+    {
+        "id": 448,
+        "name": "lucario",
+        "type": [
+            "fighting",
+            "steel"
+        ],
+        "base_price": 70
+    },
+    {
+        "id": 449,
+        "name": "hippopotas",
+        "type": [
+            "ground"
+        ],
+        "base_price": 68
+    },
+    {
+        "id": 450,
+        "name": "hippowdon",
+        "type": [
+            "ground"
+        ],
+        "base_price": 108
+    },
+    {
+        "id": 451,
+        "name": "skorupi",
+        "type": [
+            "poison",
+            "bug"
+        ],
+        "base_price": 40
+    },
+    {
+        "id": 452,
+        "name": "drapion",
+        "type": [
+            "poison",
+            "dark"
+        ],
+        "base_price": 70
+    },
+    {
+        "id": 453,
+        "name": "croagunk",
+        "type": [
+            "poison",
+            "fighting"
+        ],
+        "base_price": 48
+    },
+    {
+        "id": 454,
+        "name": "toxicroak",
+        "type": [
+            "poison",
+            "fighting"
+        ],
+        "base_price": 83
+    },
+    {
+        "id": 455,
+        "name": "carnivine",
+        "type": [
+            "grass"
+        ],
+        "base_price": 74
+    },
+    {
+        "id": 456,
+        "name": "finneon",
+        "type": [
+            "water"
+        ],
+        "base_price": 49
+    },
+    {
+        "id": 457,
+        "name": "lumineon",
+        "type": [
+            "water"
+        ],
+        "base_price": 69
+    },
+    {
+        "id": 458,
+        "name": "mantyke",
+        "type": [
+            "water",
+            "flying"
+        ],
+        "base_price": 45
+    },
+    {
+        "id": 459,
+        "name": "snover",
+        "type": [
+            "grass",
+            "ice"
+        ],
+        "base_price": 60
+    },
+    {
+        "id": 460,
+        "name": "abomasnow",
+        "type": [
+            "grass",
+            "ice"
+        ],
+        "base_price": 90
+    },
+    {
+        "id": 461,
+        "name": "weavile",
+        "type": [
+            "dark",
+            "ice"
+        ],
+        "base_price": 70
+    },
+    {
+        "id": 462,
+        "name": "magnezone",
+        "type": [
+            "electric",
+            "steel"
+        ],
+        "base_price": 70
+    },
+    {
+        "id": 463,
+        "name": "lickilicky",
+        "type": [
+            "normal"
+        ],
+        "base_price": 110
+    },
+    {
+        "id": 464,
+        "name": "rhyperior",
+        "type": [
+            "ground",
+            "rock"
+        ],
+        "base_price": 115
+    },
+    {
+        "id": 465,
+        "name": "tangrowth",
+        "type": [
+            "grass"
+        ],
+        "base_price": 100
+    },
+    {
+        "id": 466,
+        "name": "electivire",
+        "type": [
+            "electric"
+        ],
+        "base_price": 75
+    },
+    {
+        "id": 467,
+        "name": "magmortar",
+        "type": [
+            "fire"
+        ],
+        "base_price": 75
+    },
+    {
+        "id": 468,
+        "name": "togekiss",
+        "type": [
+            "fairy",
+            "flying"
+        ],
+        "base_price": 85
+    },
+    {
+        "id": 469,
+        "name": "yanmega",
+        "type": [
+            "bug",
+            "flying"
+        ],
+        "base_price": 86
+    },
+    {
+        "id": 470,
+        "name": "leafeon",
+        "type": [
+            "grass"
+        ],
+        "base_price": 65
+    },
+    {
+        "id": 471,
+        "name": "glaceon",
+        "type": [
+            "ice"
+        ],
+        "base_price": 65
+    },
+    {
+        "id": 472,
+        "name": "gliscor",
+        "type": [
+            "ground",
+            "flying"
+        ],
+        "base_price": 75
+    },
+    {
+        "id": 473,
+        "name": "mamoswine",
+        "type": [
+            "ice",
+            "ground"
+        ],
+        "base_price": 110
+    },
+    {
+        "id": 474,
+        "name": "porygon-z",
+        "type": [
+            "normal"
+        ],
+        "base_price": 85
+    },
+    {
+        "id": 475,
+        "name": "gallade",
+        "type": [
+            "psychic",
+            "fighting"
+        ],
+        "base_price": 68
+    },
+    {
+        "id": 476,
+        "name": "probopass",
+        "type": [
+            "rock",
+            "steel"
+        ],
+        "base_price": 60
+    },
+    {
+        "id": 477,
+        "name": "dusknoir",
+        "type": [
+            "ghost"
+        ],
+        "base_price": 45
+    },
+    {
+        "id": 478,
+        "name": "froslass",
+        "type": [
+            "ice",
+            "ghost"
+        ],
+        "base_price": 70
+    },
+    {
+        "id": 479,
+        "name": "rotom",
+        "type": [
+            "electric",
+            "ghost"
+        ],
+        "base_price": 50
+    },
+    {
+        "id": 480,
+        "name": "uxie",
+        "type": [
+            "psychic"
+        ],
+        "base_price": 75
+    },
+    {
+        "id": 481,
+        "name": "mesprit",
+        "type": [
+            "psychic"
+        ],
+        "base_price": 80
+    },
+    {
+        "id": 482,
+        "name": "azelf",
+        "type": [
+            "psychic"
+        ],
+        "base_price": 75
+    },
+    {
+        "id": 483,
+        "name": "dialga",
+        "type": [
+            "steel",
+            "dragon"
+        ],
+        "base_price": 100
+    },
+    {
+        "id": 484,
+        "name": "palkia",
+        "type": [
+            "water",
+            "dragon"
+        ],
+        "base_price": 90
+    },
+    {
+        "id": 485,
+        "name": "heatran",
+        "type": [
+            "fire",
+            "steel"
+        ],
+        "base_price": 91
+    },
+    {
+        "id": 486,
+        "name": "regigigas",
+        "type": [
+            "normal"
+        ],
+        "base_price": 110
+    },
+    {
+        "id": 487,
+        "name": "giratina-altered",
+        "type": [
+            "ghost",
+            "dragon"
+        ],
+        "base_price": 150
+    },
+    {
+        "id": 488,
+        "name": "cresselia",
+        "type": [
+            "psychic"
+        ],
+        "base_price": 120
+    },
+    {
+        "id": 489,
+        "name": "phione",
+        "type": [
+            "water"
+        ],
+        "base_price": 80
+    },
+    {
+        "id": 490,
+        "name": "manaphy",
+        "type": [
+            "water"
+        ],
+        "base_price": 100
+    },
+    {
+        "id": 491,
+        "name": "darkrai",
+        "type": [
+            "dark"
+        ],
+        "base_price": 70
+    },
+    {
+        "id": 492,
+        "name": "shaymin-land",
+        "type": [
+            "grass"
+        ],
+        "base_price": 100
+    },
+    {
+        "id": 493,
+        "name": "arceus",
+        "type": [
+            "normal"
+        ],
+        "base_price": 120
+    },
+    {
+        "id": 494,
+        "name": "victini",
+        "type": [
+            "psychic",
+            "fire"
+        ],
+        "base_price": 100
+    },
+    {
+        "id": 495,
+        "name": "snivy",
+        "type": [
+            "grass"
+        ],
+        "base_price": 45
+    },
+    {
+        "id": 496,
+        "name": "servine",
+        "type": [
+            "grass"
+        ],
+        "base_price": 60
+    },
+    {
+        "id": 497,
+        "name": "serperior",
+        "type": [
+            "grass"
+        ],
+        "base_price": 75
+    },
+    {
+        "id": 498,
+        "name": "tepig",
+        "type": [
+            "fire"
+        ],
+        "base_price": 65
+    },
+    {
+        "id": 499,
+        "name": "pignite",
+        "type": [
+            "fire",
+            "fighting"
+        ],
+        "base_price": 90
+    },
+    {
+        "id": 500,
+        "name": "emboar",
+        "type": [
+            "fire",
+            "fighting"
+        ],
+        "base_price": 110
+    }
+]
