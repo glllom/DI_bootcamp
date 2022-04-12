@@ -1,5 +1,27 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h1 class="m-2">Welcome, {{ name }}!</h1>
+    <div class="container-fluid d-flex justify-content-around">
+    <h1 class="m-2">Welcome, {{ current_user.name }}!</h1>
+    <h1 class="m-2">You have: ${{ current_user.money }}</h1>
+    </div>
+    <h1 class="ms-5 mt-5">Here is your Pokémons:</h1>
+    <div class="container row m-auto">
+    {% for pokemon in current_user.pokemon %}
+        <div class="card m-2 bg-secondary border border-info border-5 rounded-3" style="width: 16rem; min-width: 300px;">
+            <img src="{{ url_for('static', filename="") }}img/pokemons/{{ pokemon.pokemon_id }}.png"
+                 class="card-img-top" alt="">
+            <div class="card-body">
+                <h4 class="card-title">{{ pokemon.name | capitalize }}</h4>
+                <p class="card-text">{{ pokemon.type }}</p>
+                <p class="text-black">Base price: ${{ pokemon.base_price}}</p>
+                {% if pokemon.status not in ["for_sale"] %}
+                <a href="{{ url_for('main.post_sell', pokemon_id=pokemon.pokemon_id) }}" class="btn btn-info">Sell</a>
+                {% else %}
+                <h5 class="text-white fst-italic">Is trading now</h5>
+                {% endif %}
+            </div>
+        </div>
+    {% endfor %}
+    </div>
 {% endblock %}

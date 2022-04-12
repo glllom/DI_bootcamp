@@ -1,10 +1,23 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h1 class="title">
-  Flask Login Example
-</h1>
-<h2 class="subtitle">
-  Easy authentication and authorization in Flask.
-</h2>
+    {% for message in get_flashed_messages() %}
+        <h4 class="text-center text-danger">{{ message }}</h4>
+    {% endfor %}
+    <h1 class="ms-5 mt-5">Here is all offers:</h1>
+    <div class="d-flex justify-content-md-center">
+        {% for pokemon in pokemons_list %}
+            <div class="card m-2 bg-secondary border border-info border-5 rounded-3" style="width: 16rem;">
+                <img src="{{ url_for('static', filename="") }}img/pokemons/{{ pokemon.pokemon_id }}.png"
+                     class="card-img-top" alt="">
+                <div class="card-body">
+                    <h4 class="card-title">{{ pokemon.name | capitalize }}</h4>
+                    <p class="card-text">{{ pokemon.type }}</p>
+                    <p class="text-black">Base price: ${{ pokemon.base_price }}</p>
+                    <a href="{{ url_for('main.buy_pokemon', pokemon_id=pokemon.pokemon_id) }}"
+                       class="btn btn-info">Buy</a>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
 {% endblock %}

@@ -1,6 +1,7 @@
 from app import db
 import os
 import json
+from app.auth.models import users_pokemons
 dirname = os.path.dirname(__file__)
 
 
@@ -10,6 +11,8 @@ class Pokemon(db.Model):
     pokemon_type = db.Column("type", db.String(32))
     base_price = db.Column("base_price", db.Integer)
     is_active = db.Column("is_active", db.Integer, default=1)
+    status = db.Column(db.String, default="")
+    owner = db.relationship("User", secondary=users_pokemons, back_populates="pokemon")
 
 
 def add_pokemons_to_db():
@@ -25,3 +28,28 @@ def add_pokemons_to_db():
             )
             all_records.append(new_record)
         return all_records
+
+
+def sell_post(id):
+    pokemon = Pokemon.query.get(id)
+    pokemon.status = "for_sale"
+    db.session.commit()
+
+
+def buy_pokemon(id, current_user):
+    pokemon = Pokemon.query.get(id)
+    old_owner = pokemon.owner
+    if old_owner[0] == current_user:
+        return "You can not buy your own Pokemon."
+    pokemon.status = ""
+    if old_owner:
+        old_owner[0].money += pokemon.base_price
+        old_owner[0].pokemon.remove(pokemon)
+    current_user.pokemon.append(pokemon)
+    current_user.money -= pokemon.base_price
+    db.session.commit()
+    return "Transaction approved."
+
+
+def get_all_trades():
+    return Pokemon.query.filter_by(status="for_sale")
