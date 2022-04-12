@@ -37,16 +37,17 @@ def sell_post(id):
 
 
 def buy_pokemon(id, current_user):
+    bonus = 10  # for each part in transaction
     pokemon = Pokemon.query.get(id)
     old_owner = pokemon.owner
     if old_owner[0] == current_user:
         return "You can not buy your own Pokemon."
     pokemon.status = ""
     if old_owner:
-        old_owner[0].money += pokemon.base_price
+        old_owner[0].money += pokemon.base_price + bonus
         old_owner[0].pokemon.remove(pokemon)
     current_user.pokemon.append(pokemon)
-    current_user.money -= pokemon.base_price
+    current_user.money -= pokemon.base_price + bonus
     db.session.commit()
     return "Transaction approved."
 
